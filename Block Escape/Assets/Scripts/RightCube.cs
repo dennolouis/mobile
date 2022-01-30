@@ -5,25 +5,24 @@ using UnityEngine;
 public class RightCube : MonoBehaviour
 {
     public float speed = 10;
-    float target = 8.75f;
-    float curr;
-    float y, z;
 
+    public float maxLeft = -6.75f;
+    
     bool touchingRight = false;
     bool touchingLeft = false;
+
 
 
     // Start is called before the first frame update
     void Start()
     {
-        curr = transform.position.x;
-        y = transform.position.y;
-        z = transform.position.z;
+ 
     }
 
     // Update is called once per frame
     void Update()
     {
+        //move right
         if (Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.D))
         {
             if (!touchingRight)
@@ -35,12 +34,28 @@ public class RightCube : MonoBehaviour
         {
             if (!touchingLeft)
             {
-                transform.Translate(new Vector3(-1, 0, 0) * speed * Time.deltaTime);
+                if(transform.position.x < maxLeft)
+                {
+                    transform.Translate(new Vector3(0, 0, 0));
+                }
+                else
+                {
+                    transform.Translate(new Vector3(-1, 0, 0) * speed * Time.deltaTime);
+                }
             }
         }
 
-        //curr = Mathf.MoveTowards(curr, target, speed * Time.deltaTime);
-        //transform.position = new Vector3(curr, y, z);
+        //return to center from right
+        if (!(Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.D)) && transform.position.x > 0)
+        {
+            transform.Translate(new Vector3(-1, 0, 0) * speed * Time.deltaTime);
+        }
+
+        //return to center from left
+        if(!Input.GetKey(KeyCode.A) && transform.position.x < 0.75){
+            transform.Translate(new Vector3(1, 0, 0) * speed * Time.deltaTime);
+        }
+
 
     }
 

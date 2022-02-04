@@ -69,6 +69,9 @@ public class LeftCube : MonoBehaviour
             case "Right":
                 touchingRight = true;
                 break;
+            case "Obsticle":
+                //Time.timeScale = 0;
+                break;
 
         }
     }

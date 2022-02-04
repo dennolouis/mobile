@@ -7,6 +7,7 @@ TagManager:
   - Something
   - Left
   - Right
+  - Obsticle
   layers:
   - Default
   - TransparentFX

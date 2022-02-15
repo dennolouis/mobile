@@ -5,7 +5,8 @@ using UnityEngine;
 public class Scroll : MonoBehaviour
 {
 
-    public float speed = 5;
+    public float speed = 60;
+    public float rate = 0.4f;
     // Update is called once per frame
     void Update()
     {
@@ -15,5 +16,6 @@ public class Scroll : MonoBehaviour
         {
             transform.position = new Vector3(0, 0, 0);
         }
+        speed += rate * Time.deltaTime;
     }
 }

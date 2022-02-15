@@ -5,7 +5,9 @@ using UnityEngine;
 public class Spawn : MonoBehaviour
 {
 
-    public GameObject obj;
+    public GameObject[] obj;
+    public float speed = 2;
+    public float rate = 0.4f;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,8 +22,10 @@ public class Spawn : MonoBehaviour
 
     void Create()
     {
-        Invoke("Create", 3);
-        GameObject obsticle = Instantiate(obj, transform.position, Quaternion.identity);
-        Destroy(obsticle, 3);
+        Invoke("Create", speed);
+        GameObject obsticle = Instantiate(obj[Random.Range(0, obj.Length)], transform.position, Quaternion.identity);
+        if(speed > 0.8)
+            speed -= rate * Time.deltaTime;
+        Destroy(obsticle, speed + 1);
     }
 }

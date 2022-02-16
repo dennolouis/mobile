@@ -22,6 +22,8 @@ public class RightCube : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKey(KeyCode.X)) Time.timeScale = 1;
+
         //move right
         if (Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.D))
         {
@@ -68,6 +70,9 @@ public class RightCube : MonoBehaviour
                 break;
             case "Right":
                 touchingRight = true;
+                break;
+            case "Obsticle":
+                Time.timeScale = 0;
                 break;
         }
     }

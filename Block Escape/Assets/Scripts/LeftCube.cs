@@ -70,7 +70,7 @@ public class LeftCube : MonoBehaviour
                 touchingRight = true;
                 break;
             case "Obsticle":
-                //Time.timeScale = 0;
+                Time.timeScale = 0;
                 break;
 
         }

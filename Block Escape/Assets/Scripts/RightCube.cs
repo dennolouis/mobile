@@ -73,6 +73,7 @@ public class RightCube : MonoBehaviour
                 break;
             case "Obsticle":
                 Time.timeScale = 0;
+                print("Score: " + FindObjectOfType<Spawn>().GetScore());
                 break;
         }
     }

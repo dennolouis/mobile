@@ -27,7 +27,7 @@ public class RightCube : MonoBehaviour
         //move right
         if (Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.D))
         {
-            if (!touchingRight)
+            if (!touchingRight && transform.position.x < 27)
             {
                 transform.Translate(new Vector3(1, 0, 0) * speed * Time.deltaTime);
             }

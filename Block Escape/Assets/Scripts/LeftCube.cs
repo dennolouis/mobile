@@ -24,7 +24,7 @@ public class LeftCube : MonoBehaviour
         //move left
         if (Input.GetKey(KeyCode.A))
         {
-            if (!touchingLeft)
+            if (!touchingLeft && transform.position.x > -28)
             {
                 transform.Translate(new Vector3(-1, 0, 0) * speed * Time.deltaTime);
             }

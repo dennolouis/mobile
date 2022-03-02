@@ -10,6 +10,7 @@ public class RightCube : MonoBehaviour
     
     bool touchingRight = false;
     bool touchingLeft = false;
+    public bool immune = false;
 
 
 
@@ -22,7 +23,12 @@ public class RightCube : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.X)) Time.timeScale = 1;
+        if (Input.GetKey(KeyCode.P))
+        {
+            immune = true;
+            Time.timeScale = 1;
+            Invoke("Resume", 1);
+        }
 
         //move right
         if (Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.D))
@@ -72,8 +78,8 @@ public class RightCube : MonoBehaviour
                 touchingRight = true;
                 break;
             case "Obsticle":
-                Time.timeScale = 0;
-                print("Score: " + FindObjectOfType<Spawn>().GetScore());
+                if(!immune)
+                    Time.timeScale = 0;
                 break;
         }
     }
@@ -82,6 +88,11 @@ public class RightCube : MonoBehaviour
     {
         touchingLeft = false;
         touchingRight = false;
+    }
+
+    void Resume()
+    {
+        immune = false;
     }
 }
 

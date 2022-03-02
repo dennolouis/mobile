@@ -19,9 +19,9 @@ MonoBehaviour:
     width: 1920
     height: 997
   m_ShowMode: 4
-  m_Title: Project
+  m_Title: Game
   m_RootView: {fileID: 10}
-  m_MinSize: {x: 875, y: 521}
+  m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
@@ -92,8 +92,8 @@ MonoBehaviour:
     y: 0
     width: 355
     height: 671
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 25}
   m_Panes:
   - {fileID: 25}
@@ -118,8 +118,8 @@ MonoBehaviour:
     y: 0
     width: 664
     height: 671
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 24}
   m_Panes:
   - {fileID: 17}
@@ -148,10 +148,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 947
-  m_MinSize: {x: 1013, y: 471}
-  m_MaxSize: {x: 20002, y: 14042}
+  m_MinSize: {x: 1019, y: 492}
+  m_MaxSize: {x: 20008, y: 14042}
   vertical: 0
-  controlID: 115
+  controlID: 19
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -171,8 +171,8 @@ MonoBehaviour:
     y: 0
     width: 521
     height: 947
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 22}
   m_Panes:
   - {fileID: 22}
@@ -198,8 +198,8 @@ MonoBehaviour:
     y: 0
     width: 230
     height: 671
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 23}
   m_Panes:
   - {fileID: 23}
@@ -326,10 +326,10 @@ MonoBehaviour:
     y: 0
     width: 1399
     height: 947
-  m_MinSize: {x: 738, y: 471}
-  m_MaxSize: {x: 16002, y: 14042}
+  m_MinSize: {x: 743, y: 492}
+  m_MaxSize: {x: 16007, y: 14042}
   vertical: 1
-  controlID: 116
+  controlID: 142
 --- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -353,10 +353,10 @@ MonoBehaviour:
     y: 0
     width: 1399
     height: 671
-  m_MinSize: {x: 738, y: 200}
-  m_MaxSize: {x: 16002, y: 4021}
+  m_MinSize: {x: 743, y: 221}
+  m_MaxSize: {x: 16007, y: 4021}
   vertical: 0
-  controlID: 117
+  controlID: 143
 --- !u!114 &15
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -597,9 +597,9 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 6e5a0000
-    m_LastClickedID: 23150
-    m_ExpandedIDs: 000000004659000000ca9a3b
+    m_SelectedIDs: 0c590000
+    m_LastClickedID: 22796
+    m_ExpandedIDs: 00000000e458000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -627,7 +627,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000046590000
+    m_ExpandedIDs: 00000000e4580000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -749,9 +749,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
+      m_SelectedIDs: 8c170000
       m_LastClickedID: 0
-      m_ExpandedIDs: 2afbffffd6560000
+      m_ExpandedIDs: 52fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 

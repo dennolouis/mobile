@@ -70,8 +70,8 @@ public class LeftCube : MonoBehaviour
                 touchingRight = true;
                 break;
             case "Obsticle":
-                Time.timeScale = 0;
-                print("Score: " + FindObjectOfType<Spawn>().GetScore());
+                if(!FindObjectOfType<RightCube>().immune)
+                    Time.timeScale = 0;
                 break;
 
         }

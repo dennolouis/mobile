@@ -12,14 +12,6 @@ public class RightCube : MonoBehaviour
     bool touchingLeft = false;
     public bool immune = false;
 
-
-
-    // Start is called before the first frame update
-    void Start()
-    {
- 
-    }
-
     // Update is called once per frame
     void Update()
     {

@@ -10,14 +10,6 @@ public class LeftCube : MonoBehaviour
     bool touchingRight = false;
     bool touchingLeft = false;
 
-
-
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
     // Update is called once per frame
     void Update()
     {
@@ -26,7 +18,7 @@ public class LeftCube : MonoBehaviour
         {
             if (!touchingLeft && transform.position.x > -28)
             {
-                transform.Translate(new Vector3(-1, 0, 0) * speed * Time.deltaTime);
+                transform.Translate(new Vector3(-1, 0, 0) * speed * Time.deltaTime);        
             }
         }
         else if (Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.D))
@@ -35,7 +27,7 @@ public class LeftCube : MonoBehaviour
             {
                 if (transform.position.x > maxRight)
                 {
-                    transform.Translate(new Vector3(0, 0, 0));
+                    transform.Translate(new Vector3(0, 0, 0));                 
                 }
                 else
                 {

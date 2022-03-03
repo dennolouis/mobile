@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class LeftCube : MonoBehaviour
 {
@@ -10,18 +11,20 @@ public class LeftCube : MonoBehaviour
     bool touchingRight = false;
     bool touchingLeft = false;
 
+    bool left = false, right = false;
+
     // Update is called once per frame
     void Update()
     {
         //move left
-        if (Input.GetKey(KeyCode.A))
+        if (left)
         {
             if (!touchingLeft && transform.position.x > -28)
             {
                 transform.Translate(new Vector3(-1, 0, 0) * speed * Time.deltaTime);        
             }
         }
-        else if (Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.D))
+        else if (right)
         {
             if (!touchingRight)
             {
@@ -37,13 +40,13 @@ public class LeftCube : MonoBehaviour
         }
 
         //return to center from right
-        if (!(Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.D)) && transform.position.x > -3)
+        if (!right && transform.position.x > -3)
         {
             transform.Translate(new Vector3(-1, 0, 0) * speed * Time.deltaTime);
         }
 
         //return to center from left
-        if (!Input.GetKey(KeyCode.A) && transform.position.x < -0.75)
+        if (!left && transform.position.x < -0.75)
         {
             transform.Translate(new Vector3(1, 0, 0) * speed * Time.deltaTime);
         }
@@ -73,6 +76,31 @@ public class LeftCube : MonoBehaviour
     {
         touchingLeft = false;
         touchingRight = false;
+    }
+
+
+
+    public void SetLeft(InputAction.CallbackContext value)
+    {
+        if (value.started)
+        {
+            left = true;
+        }
+        if (value.canceled)
+        {
+            left = false;
+        }
+    }
+    public void SetRight(InputAction.CallbackContext value)
+    {
+        if (value.started)
+        {
+            right = true;
+        }
+        if (value.canceled)
+        {
+            right = false;
+        }
     }
 }
 

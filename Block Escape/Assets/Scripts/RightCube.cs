@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class RightCube : MonoBehaviour
 {
@@ -11,26 +12,30 @@ public class RightCube : MonoBehaviour
     bool touchingRight = false;
     bool touchingLeft = false;
     public bool immune = false;
+    
+    
+    bool left = false, right = false;
+
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.P))
+        /*if (Input.GetKey(KeyCode.P))
         {
             immune = true;
             Time.timeScale = 1;
             Invoke("Resume", 1);
-        }
+        }*/
 
         //move right
-        if (Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.D))
+        if (right)
         {
             if (!touchingRight && transform.position.x < 27)
             {
                 transform.Translate(new Vector3(1, 0, 0) * speed * Time.deltaTime);
             }
         }
-        else if (Input.GetKey(KeyCode.A))
+        else if (left)
         {
             if (!touchingLeft)
             {
@@ -46,13 +51,13 @@ public class RightCube : MonoBehaviour
         }
 
         //return to center from right
-        if (!(Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.D)) && transform.position.x > 0)
+        if (!right && transform.position.x > 0)
         {
             transform.Translate(new Vector3(-1, 0, 0) * speed * Time.deltaTime);
         }
 
         //return to center from left
-        if(!Input.GetKey(KeyCode.A) && transform.position.x < 0.75){
+        if(!left && transform.position.x < 0.75){
             transform.Translate(new Vector3(1, 0, 0) * speed * Time.deltaTime);
         }
 
@@ -85,6 +90,29 @@ public class RightCube : MonoBehaviour
     void Resume()
     {
         immune = false;
+    }
+
+    public void SetLeft(InputAction.CallbackContext value)
+    {
+        if (value.started)
+        {
+            left = true;
+        }
+        if (value.canceled)
+        {
+            left = false;
+        }
+    }
+    public void SetRight(InputAction.CallbackContext value)
+    {
+        if (value.started)
+        {
+            right = true;
+        }
+        if (value.canceled)
+        {
+            right = false;
+        }
     }
 }
 

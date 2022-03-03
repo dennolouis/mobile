@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using UnityEngine.InputSystem;
 
 public class Spawn : MonoBehaviour
 {
@@ -37,5 +38,17 @@ public class Spawn : MonoBehaviour
     public int GetScore()
     {
         return score;
+    }
+
+    public void temp(InputAction.CallbackContext value)
+    {
+        if (value.started)
+        {
+            print("started");
+        }
+        if (value.canceled)
+        {
+            print("ended");
+        }
     }
 }

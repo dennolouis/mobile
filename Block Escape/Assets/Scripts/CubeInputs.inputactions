@@ -1,0 +1,52 @@
+{
+    "name": "CubeInputs",
+    "maps": [
+        {
+            "name": "cube inputs",
+            "id": "94595347-632d-4af8-be77-f16558bd29f3",
+            "actions": [
+                {
+                    "name": "left",
+                    "type": "Button",
+                    "id": "efc48779-604d-424f-82bf-e778b0791400",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "right",
+                    "type": "Button",
+                    "id": "8f7b5854-1591-45ff-a53f-21bcbf5e7eca",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "c67d6f67-d048-4c46-a490-ef0bc40625ab",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "left",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c3826567-34bd-40ed-b109-e50df5b825b9",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "right",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

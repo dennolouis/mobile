@@ -20,13 +20,7 @@ public class RightCube : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        /*if (Input.GetKey(KeyCode.P))
-        {
-            immune = true;
-            Time.timeScale = 1;
-            Invoke("Resume", 1);
-        }*/
-
+      
         //move right
         if (right)
         {
@@ -112,6 +106,16 @@ public class RightCube : MonoBehaviour
         if (value.canceled)
         {
             right = false;
+        }
+    }
+
+    public void Resume(InputAction.CallbackContext value)
+    {
+        if (value.started)
+        {
+            immune = true;
+            Time.timeScale = 1;
+            Invoke("Resume", 1);
         }
     }
 }

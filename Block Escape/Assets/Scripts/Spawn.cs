@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
-using UnityEngine.InputSystem;
 
 public class Spawn : MonoBehaviour
 {
@@ -13,26 +12,30 @@ public class Spawn : MonoBehaviour
     public float rate = 0.4f;
 
     public TextMeshProUGUI scoreUI;
+    public TextMeshProUGUI bestUI;
 
     int score = 0;
+    int best = 100;
+
+    private void Awake()
+    {
+        bestUI.text = "Best: " + best.ToString();
+    }
 
     // Start is called before the first frame update
     void Start()
     {
-        Create();
-        scoreUI = FindObjectOfType<TextMeshProUGUI>();
+        Init();
     }
 
 
-    void Create()
+    void Init()
     {
-        Invoke("Create", speed);
-        GameObject obsticle = Instantiate(obj[Random.Range(0, obj.Length)], transform.position, Quaternion.identity);
-        score++;
-        scoreUI.text = "Score: " + score.ToString();
-        if(speed > 0.8)
-            speed -= rate * Time.deltaTime;
-        Destroy(obsticle, speed + 1);
+        Invoke("Init", speed);
+        
+        CreateObsticle();
+        HandleScore();
+        HandleSpeed();
     }
 
     public int GetScore()
@@ -40,15 +43,27 @@ public class Spawn : MonoBehaviour
         return score;
     }
 
-    public void temp(InputAction.CallbackContext value)
+    void HandleScore()
     {
-        if (value.started)
+        score++;
+        scoreUI.text = "Score: " + score.ToString();
+        if (score > best)
         {
-            print("started");
+            best = score;
+            bestUI.text = "Best: " + best.ToString();
         }
-        if (value.canceled)
-        {
-            print("ended");
-        }
+    
+    }
+
+    void CreateObsticle()
+    {
+        GameObject obsticle = Instantiate(obj[Random.Range(0, obj.Length)], transform.position, Quaternion.identity);
+        Destroy(obsticle, speed + 1);
+    }
+
+    void HandleSpeed()
+    {
+        if (speed > 0.8)
+            speed -= rate * Time.deltaTime;
     }
 }

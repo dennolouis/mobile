@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637818788508683069
-    m_Hash: 2422235624
+      ticks: 637819554104422843
+    m_Hash: 1192395628
   m_LockFileStatus:
     m_FilePath: N:/Unity Projects/mobile/Block Escape/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637818788508763089
-    m_Hash: 3171555049
+      ticks: 637819554104422843
+    m_Hash: 3156881
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
@@ -981,6 +981,7 @@ m_ResolvedPackages:
     - 1.6.4
     - 1.7.0-pre.1
     - 1.7.0-pre.2
+    - 1.7.0
     compatible:
     - 1.5.6
     - 1.5.7
@@ -994,6 +995,7 @@ m_ResolvedPackages:
     - 1.6.4
     - 1.7.0-pre.1
     - 1.7.0-pre.2
+    - 1.7.0
     verified: 1.5.7
   dependencies:
   - name: com.unity.modules.director

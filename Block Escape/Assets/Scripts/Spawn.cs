@@ -66,4 +66,9 @@ public class Spawn : MonoBehaviour
         if (speed > 0.8)
             speed -= rate * Time.deltaTime;
     }
+
+    public void test()
+    {
+        print("it works");
+    }
 }

@@ -338,7 +338,6 @@
 "Assets/Scripts/PlayerData.cs"
 "Assets/Scripts/RightCube.cs"
 "Assets/Scripts/Rotate.cs"
-"Assets/Scripts/SaveManager.cs"
 "Assets/Scripts/SaveSystem.cs"
 "Assets/Scripts/Scroll.cs"
 "Assets/Scripts/Spawn.cs"

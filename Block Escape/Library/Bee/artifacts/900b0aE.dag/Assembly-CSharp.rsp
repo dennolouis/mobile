@@ -336,6 +336,7 @@
 "Assets/Scripts/ParticleScale.cs"
 "Assets/Scripts/playbo.cs"
 "Assets/Scripts/PlayerData.cs"
+"Assets/Scripts/Pulse.cs"
 "Assets/Scripts/RightCube.cs"
 "Assets/Scripts/Rotate.cs"
 "Assets/Scripts/SaveSystem.cs"

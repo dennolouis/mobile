@@ -15,17 +15,21 @@ public class Spawn : MonoBehaviour
     public TextMeshProUGUI bestUI;
 
     int score = 0;
-    int best = 100;
+    public int best;
+
 
     private void Awake()
     {
+        Load();
         bestUI.text = "Best: " + best.ToString();
     }
 
     // Start is called before the first frame update
     void Start()
     {
+
         Init();
+        
     }
 
 
@@ -70,5 +74,18 @@ public class Spawn : MonoBehaviour
     public void test()
     {
         print("it works");
+    }
+
+
+    public void Save()
+    {
+        SaveSystem.Save(this);
+    }
+
+    public void Load()
+    {
+        PlayerData data = SaveSystem.Load();
+
+        best = data.highscore;
     }
 }

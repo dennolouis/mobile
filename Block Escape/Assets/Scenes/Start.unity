@@ -123,6 +123,17 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &44004131 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5086956814535595349, guid: ab1de68be2f9f2c40a4aa5a59e8392bd, type: 3}
+  m_PrefabInstance: {fileID: 5086956814511826550}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed50960fb7184304f921fa11b64a1fa5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &106897886
 GameObject:
   m_ObjectHideFlags: 0
@@ -680,18 +691,6 @@ MonoBehaviour:
   - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: RightCube, Assembly-CSharp
-        m_MethodName: SetLeft
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: LeftCube, Assembly-CSharp
         m_MethodName: SetLeft
         m_Mode: 0
@@ -751,14 +750,14 @@ MonoBehaviour:
     m_ActionName: cube inputs/resume[/Keyboard/space]
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1612228396}
-        m_TargetAssemblyTypeName: playbo, Assembly-CSharp
-        m_MethodName: playbutton
-        m_Mode: 1
+      - m_Target: {fileID: 44004131}
+        m_TargetAssemblyTypeName: LevelChanger, Assembly-CSharp
+        m_MethodName: FadeToLevel
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -1726,3 +1725,60 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 731c4a147f51389489ff7c73f330c1ef, type: 3}
+--- !u!1001 &5086956814511826550
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5086956814535595350, guid: ab1de68be2f9f2c40a4aa5a59e8392bd, type: 3}
+      propertyPath: m_Name
+      value: LeverChanger
+      objectReference: {fileID: 0}
+    - target: {fileID: 5086956814535595351, guid: ab1de68be2f9f2c40a4aa5a59e8392bd, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5086956814535595351, guid: ab1de68be2f9f2c40a4aa5a59e8392bd, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5086956814535595351, guid: ab1de68be2f9f2c40a4aa5a59e8392bd, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5086956814535595351, guid: ab1de68be2f9f2c40a4aa5a59e8392bd, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5086956814535595351, guid: ab1de68be2f9f2c40a4aa5a59e8392bd, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5086956814535595351, guid: ab1de68be2f9f2c40a4aa5a59e8392bd, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5086956814535595351, guid: ab1de68be2f9f2c40a4aa5a59e8392bd, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5086956814535595351, guid: ab1de68be2f9f2c40a4aa5a59e8392bd, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5086956814535595351, guid: ab1de68be2f9f2c40a4aa5a59e8392bd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5086956814535595351, guid: ab1de68be2f9f2c40a4aa5a59e8392bd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5086956814535595351, guid: ab1de68be2f9f2c40a4aa5a59e8392bd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ab1de68be2f9f2c40a4aa5a59e8392bd, type: 3}

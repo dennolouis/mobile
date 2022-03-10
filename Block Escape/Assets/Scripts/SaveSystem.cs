@@ -40,7 +40,7 @@ public static class SaveSystem
             Debug.LogError("save file not found");
             PlayerData data;
             data.highscore = 0;
-            return data;
+            return null;
         }
     }
 }

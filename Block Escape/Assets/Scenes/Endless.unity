@@ -2497,7 +2497,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh24214
+  m_Name: pb_Mesh23250
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -3047,6 +3047,7 @@ MonoBehaviour:
   - {fileID: 1810310016241504943, guid: 46845b93165fb7e40a5428ed416c3360, type: 3}
   - {fileID: 5133870728380717779, guid: 0e4aca8f1c01d9a428fdc87f04e44f7b, type: 3}
   - {fileID: 7611830432565372586, guid: 020488e593d00754fa72f0006e38976e, type: 3}
+  - {fileID: 100004, guid: 10a7ec2a2783770419a38059c45ea8b3, type: 3}
   speed: 2
   rate: 1.5
   scoreUI: {fileID: 1537979950}

@@ -8,6 +8,7 @@ TagManager:
   - Left
   - Right
   - Obsticle
+  - HitSound
   layers:
   - Default
   - TransparentFX

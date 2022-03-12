@@ -1,13 +1,36 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
+using UnityEngine.InputSystem;
 
 public class playbo : MonoBehaviour
 {
-    public void playbutton()
+
+    AudioSource auidoSource;
+    float volLev = 0;
+
+    private void Start()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        auidoSource = GetComponent<AudioSource>();
+    }
+
+    private void Update()
+    {
+        auidoSource.volume -= volLev * Time.deltaTime;
+    }
+
+    void lowerVolume()
+    {
+        volLev = 0.2f;
+    }
+    public void playbutton(InputAction.CallbackContext value)
+    {
+        if (value.started)
+        {
+            auidoSource.Play();
+            lowerVolume();
+        }
+
     }
         
 }

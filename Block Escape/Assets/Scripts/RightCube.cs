@@ -72,6 +72,7 @@ public class RightCube : MonoBehaviour
                 if (!immune)
                 {
                     FindObjectOfType<Spawn>().Save();
+                    GameObject.FindGameObjectWithTag("HitSound").GetComponent<AudioSource>().Play();
                     Time.timeScale = 0;
                 }
                 break;

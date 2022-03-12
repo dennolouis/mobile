@@ -334,6 +334,7 @@
 "Assets/48 Particle Effect Pack/Script/csParticleMove.cs"
 "Assets/48 Particle Effect Pack/Script/csShowAllEffect.cs"
 "Assets/Scripts/BackDropScroll.cs"
+"Assets/Scripts/chase.cs"
 "Assets/Scripts/FireProjectile.cs"
 "Assets/Scripts/LeftCube.cs"
 "Assets/Scripts/LevelChanger.cs"

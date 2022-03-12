@@ -6,11 +6,11 @@ using UnityEngine;
 public class PlayerData
 {
 
-    public int highscore;
+    public int highscore = 0;
 
-    public PlayerData(Spawn score)
+    public PlayerData(int score)
     {
-        highscore = score.best;
+        highscore = score;
     }
 
 }

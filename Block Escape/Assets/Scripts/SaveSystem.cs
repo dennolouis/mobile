@@ -6,7 +6,7 @@ using System.Runtime.Serialization.Formatters.Binary;
 public static class SaveSystem
 {
 
-    public static void Save(Spawn score)
+    public static void Save(int score)
     {
         BinaryFormatter formatter = new BinaryFormatter();
         string path = Application.persistentDataPath + "/player.fun";
@@ -38,9 +38,8 @@ public static class SaveSystem
         else
         {
             Debug.LogError("save file not found");
-            PlayerData data;
-            data.highscore = 0;
-            return null;
+            PlayerData data = new PlayerData(0);
+            return data;
         }
     }
 }

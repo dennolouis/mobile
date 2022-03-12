@@ -79,7 +79,7 @@ public class Spawn : MonoBehaviour
 
     public void Save()
     {
-        SaveSystem.Save(this);
+        SaveSystem.Save(this.best);
     }
 
     public void Load()

@@ -28,8 +28,8 @@ public class Spawn : MonoBehaviour
     void Start()
     {
 
-        Init();
-        
+        Invoke("Init", speed/2);
+
     }
 
 

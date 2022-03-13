@@ -3049,7 +3049,7 @@ MonoBehaviour:
   - {fileID: 7611830432565372586, guid: 020488e593d00754fa72f0006e38976e, type: 3}
   - {fileID: 100004, guid: 10a7ec2a2783770419a38059c45ea8b3, type: 3}
   - {fileID: 7471055548040897547, guid: b3afcd9692ed8b246bed8c04a0aab572, type: 3}
-  speed: 2
+  speed: 1.5
   rate: 1.5
   scoreUI: {fileID: 1537979950}
   bestUI: {fileID: 2138772973}
@@ -3265,7 +3265,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 28e9b4a6c3d32174983bf47e70dcb41b, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.101
+  m_Volume: 0.482
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -3783,7 +3783,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2b3885e8031aed4ba456dc7480cb009, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 60
+  speed: 80
   rate: 0.4
 --- !u!1 &2138772971
 GameObject:

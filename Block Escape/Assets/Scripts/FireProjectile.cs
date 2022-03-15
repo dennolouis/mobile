@@ -9,6 +9,7 @@ public class FireProjectile : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
         float whatToLookAt = Mathf.Floor(Random.Range(-1, 2));
         if(whatToLookAt % 2 == 0)
         {

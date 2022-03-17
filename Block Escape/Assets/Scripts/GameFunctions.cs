@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class GameFunctions : MonoBehaviour
 {
@@ -14,20 +15,25 @@ public class GameFunctions : MonoBehaviour
 
     public bool canContinue = true;
 
+    InterstitialAd intersitialAd;
+    RewardedAds rewardedAd;
+
     
-    
-    
-    // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
+        Time.timeScale = 1;
+        justGothit = false;
+        canContinue = true;
         continueButton.SetActive(false);
         gameOverScreen.SetActive(false);
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Start()
     {
-        
+        intersitialAd = FindObjectOfType<InterstitialAd>();
+        rewardedAd = FindObjectOfType<RewardedAds>();
+        intersitialAd.LoadAd();
+        rewardedAd.LoadAd();
     }
 
 
@@ -58,9 +64,20 @@ public class GameFunctions : MonoBehaviour
     {
         if (value.started)
         {
-            Time.timeScale = 1;
+            rewardedAd.ShowAd();
+            //Time.timeScale = 1;
             justGothit = false;
             continueButton.SetActive(false);
+        }
+    }
+
+    public void PlayAgain(InputAction.CallbackContext value)
+    {
+        if (value.started)
+        {
+            print("ad should play");
+            intersitialAd.ShowAd();
+            SceneManager.LoadScene(1);
         }
     }
 }

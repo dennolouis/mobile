@@ -16,11 +16,17 @@ public class RightCube : MonoBehaviour
     
     bool left = false, right = false;
 
+    GameFunctions gameFunctions;
+
+    private void Start()
+    {
+        gameFunctions = FindObjectOfType<GameFunctions>();
+    }
 
     // Update is called once per frame
     void Update()
     {
-      
+
         //move right
         if (right)
         {
@@ -71,9 +77,10 @@ public class RightCube : MonoBehaviour
             case "Obsticle":
                 if (!immune)
                 {
-                    FindObjectOfType<Spawn>().Save();
-                    GameObject.FindGameObjectWithTag("HitSound").GetComponent<AudioSource>().Play();
-                    Time.timeScale = 0;
+                    //FindObjectOfType<Spawn>().Save();
+                     //GameObject.FindGameObjectWithTag("HitSound").GetComponent<AudioSource>().Play();
+                    //Time.timeScale = 0;
+                    gameFunctions.PlayerGotHit();
                 }
                 break;
         }
@@ -119,6 +126,7 @@ public class RightCube : MonoBehaviour
         {
             immune = true;
             Time.timeScale = 1;
+            //this is what makes you immune for one second
             Invoke("Resume", 1);
         }
     }

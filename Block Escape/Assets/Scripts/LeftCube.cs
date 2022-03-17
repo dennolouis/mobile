@@ -13,6 +13,13 @@ public class LeftCube : MonoBehaviour
 
     bool left = false, right = false;
 
+    GameFunctions gameFunctions;
+
+    private void Start()
+    {
+        gameFunctions = FindObjectOfType<GameFunctions>();
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -67,9 +74,10 @@ public class LeftCube : MonoBehaviour
             case "Obsticle":
                 if (!FindObjectOfType<RightCube>().immune)
                 {
-                    FindObjectOfType<Spawn>().Save();
-                    GameObject.FindGameObjectWithTag("HitSound").GetComponent<AudioSource>().Play();
-                    Time.timeScale = 0;
+                    //FindObjectOfType<Spawn>().Save();
+                    // GameObject.FindGameObjectWithTag("HitSound").GetComponent<AudioSource>().Play();
+                    //Time.timeScale = 0;
+                    gameFunctions.PlayerGotHit();
                 }
                 break;
 

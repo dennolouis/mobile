@@ -1455,18 +1455,6 @@ MonoBehaviour:
     m_ActionName: cube inputs/right[/Keyboard/d]
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1336761899}
-        m_TargetAssemblyTypeName: RightCube, Assembly-CSharp
-        m_MethodName: Resume
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 1029528765}
         m_TargetAssemblyTypeName: GameFunctions, Assembly-CSharp
         m_MethodName: Continue
@@ -3394,7 +3382,6 @@ GameObject:
   - component: {fileID: 1453878520}
   - component: {fileID: 1453878519}
   - component: {fileID: 1453878518}
-  - component: {fileID: 1453878521}
   - component: {fileID: 1453878522}
   m_Layer: 5
   m_Name: ContinueButton
@@ -3505,18 +3492,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1453878516}
   m_CullTransparentMesh: 1
---- !u!114 &1453878521
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1453878516}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d3cf6025ac00ebf4d972246499c02be5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1453878522
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3851,6 +3826,7 @@ GameObject:
   - component: {fileID: 1617498529}
   - component: {fileID: 1617498531}
   - component: {fileID: 1617498532}
+  - component: {fileID: 1617498533}
   m_Layer: 0
   m_Name: AdHandler
   m_TagString: Untagged
@@ -3916,6 +3892,24 @@ MonoBehaviour:
   _showAdButton: {fileID: 1453878518}
   _androidAdUnitId: Rewarded_Android
   _iOSAdUnitId: Rewarded_iOS
+--- !u!114 &1617498533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1617498528}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc0cbaaf885545a4cb8eb1d5054b99a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _loadBannerButton: {fileID: 0}
+  _showBannerButton: {fileID: 0}
+  _hideBannerButton: {fileID: 0}
+  _bannerPosition: 4
+  _androidAdUnitId: Banner_Android
+  _iOSAdUnitId: Banner_iOS
 --- !u!1 &1679260534 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1399939118398511861, guid: 731c4a147f51389489ff7c73f330c1ef, type: 3}

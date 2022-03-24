@@ -35,7 +35,9 @@ public class Spawn : MonoBehaviour
 
     void Init()
     {
-        Invoke("Init", speed);
+        //only continue if game is not over
+        if (!FindObjectOfType<GameFunctions>().GetGameState())
+            Invoke("Init", speed);
         
         CreateObsticle();
         HandleScore();

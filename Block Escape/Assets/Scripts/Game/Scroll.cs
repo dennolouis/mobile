@@ -10,7 +10,9 @@ public class Scroll : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(new Vector3(0, 1, 0) * speed * Time.deltaTime);
+        //only do this is game is not over
+        if (!FindObjectOfType<GameFunctions>().GetGameState())
+            transform.Translate(new Vector3(0, 1, 0) * speed * Time.deltaTime);
 
         if(transform.position.y > 9999999999999999999)
         {

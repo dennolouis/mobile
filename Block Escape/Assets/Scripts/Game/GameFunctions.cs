@@ -10,6 +10,7 @@ public class GameFunctions : MonoBehaviour
 {
 
     static public bool justGothit = false;
+    static public bool gameOver = false;
 
     public GameObject continueButton;
     public GameObject gameOverScreen;
@@ -26,6 +27,7 @@ public class GameFunctions : MonoBehaviour
         Time.timeScale = 1;
         justGothit = false;
         canContinue = true;
+        gameOver = false;
         continueButton.SetActive(false);
         gameOverScreen.SetActive(false);
     }
@@ -59,8 +61,26 @@ public class GameFunctions : MonoBehaviour
         }
         else
         {
+            MaybeShowAd();
             gameOverScreen.SetActive(true);
         }
+    }
+
+    void MaybeShowAd()
+    {
+        //show ad here 30% of the time
+        if (Random.Range(0, 100) <= 30)
+        {
+            gameOver = true;
+            AudioListener.pause = true;
+            intersitialAd.ShowAd();
+        }
+            print("ad?");
+    }
+
+    public bool GetGameState()
+    {
+        return gameOver;
     }
 
     public void Continue(InputAction.CallbackContext value)
@@ -68,6 +88,7 @@ public class GameFunctions : MonoBehaviour
         if (value.started)
         {
             AudioListener.pause = true;
+            banner.HideBannerAd();
             rewardedAd.ShowAd();
             justGothit = false;
             continueButton.SetActive(false);

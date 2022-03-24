@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 997
   m_ShowMode: 4
-  m_Title: Scene
+  m_Title: Inspector
   m_RootView: {fileID: 10}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -118,8 +118,8 @@ MonoBehaviour:
     y: 0
     width: 733
     height: 676
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 28}
   m_Panes:
   - {fileID: 21}
@@ -149,10 +149,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 947
-  m_MinSize: {x: 1019, y: 342}
-  m_MaxSize: {x: 20008, y: 8042}
+  m_MinSize: {x: 1015, y: 492}
+  m_MaxSize: {x: 20004, y: 14042}
   vertical: 0
-  controlID: 150
+  controlID: 178
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -172,17 +172,17 @@ MonoBehaviour:
     y: 0
     width: 530
     height: 947
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 26}
   m_Panes:
   - {fileID: 26}
   - {fileID: 20}
-  - {fileID: 17}
   - {fileID: 16}
+  - {fileID: 17}
   - {fileID: 15}
   m_Selected: 0
-  m_LastSelected: 4
+  m_LastSelected: 1
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -202,8 +202,8 @@ MonoBehaviour:
     y: 0
     width: 201
     height: 676
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 27}
   m_Panes:
   - {fileID: 27}
@@ -219,7 +219,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ConsoleWindow
+  m_Name: ProjectBrowser
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -228,16 +228,16 @@ MonoBehaviour:
     y: 676
     width: 1390
     height: 271
-  m_MinSize: {x: 101, y: 121}
-  m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 29}
+  m_MinSize: {x: 231, y: 271}
+  m_MaxSize: {x: 10001, y: 10021}
+  m_ActualView: {fileID: 25}
   m_Panes:
   - {fileID: 25}
   - {fileID: 29}
   - {fileID: 18}
   - {fileID: 23}
-  m_Selected: 1
-  m_LastSelected: 0
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -330,10 +330,10 @@ MonoBehaviour:
     y: 0
     width: 1390
     height: 947
-  m_MinSize: {x: 743, y: 342}
-  m_MaxSize: {x: 16007, y: 8042}
+  m_MinSize: {x: 740, y: 492}
+  m_MaxSize: {x: 16004, y: 14042}
   vertical: 1
-  controlID: 151
+  controlID: 179
 --- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -357,10 +357,10 @@ MonoBehaviour:
     y: 0
     width: 1390
     height: 676
-  m_MinSize: {x: 743, y: 221}
-  m_MaxSize: {x: 16007, y: 4021}
+  m_MinSize: {x: 740, y: 221}
+  m_MaxSize: {x: 16004, y: 4021}
   vertical: 0
-  controlID: 152
+  controlID: 180
 --- !u!114 &15
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -667,9 +667,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1644
+    x: 1390
     y: 73
-    width: 275
+    width: 529
     height: 926
   m_ViewDataDictionary: {fileID: 0}
 --- !u!114 &21
@@ -785,7 +785,7 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 31794
+  m_LastSelectedObjectID: -130880
 --- !u!114 &24
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -849,22 +849,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts/Effects
+    - Assets
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts/Effects
+  - Assets
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: N:\Unity Projects\mobile\Block Escape
+  m_LastProjectPath: C:\Repos\Unity 3D\mobile\Block Escape
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 46}
-    m_SelectedIDs: 60650000
-    m_LastClickedID: 25952
-    m_ExpandedIDs: 00000000065e00005265000000ca9a3b
+    m_SelectedIDs: 406d0000
+    m_LastClickedID: 27968
+    m_ExpandedIDs: 00000000406d000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -892,7 +892,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000065e0000
+    m_ExpandedIDs: 00000000406d0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -917,8 +917,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: daa8feff
-    m_LastClickedInstanceID: -87846
+    m_SelectedInstanceIDs: 
+    m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000e8800000d0800000c28000004c650000ba58000000000000
     m_RenameOverlay:
@@ -1014,9 +1014,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: daa8feff
-      m_LastClickedID: -87846
-      m_ExpandedIDs: 60a9feffeaacfeffcecffefffee5feff60ecfeff22fbffffa8720000307300009c790000d6790000ea7b0000f87b0000887c0000
+      m_SelectedIDs: c000feff
+      m_LastClickedID: -130880
+      m_ExpandedIDs: 080dfeffde15feffe682ffff0af5ffff7a69000010800000ac86000062870000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1076,9 +1076,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 161.5, y: 287, z: 0}
+    m_Target: {x: 116.26192, y: 1626.253, z: -6.4116583}
     speed: 2
-    m_Value: {x: 161.5, y: 287, z: 0}
+    m_Value: {x: 116.26192, y: 1626.253, z: -6.4116583}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1129,9 +1129,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 65.72574
+    m_Target: 100.70938
     speed: 2
-    m_Value: 65.72574
+    m_Value: 100.70938
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -1209,7 +1209,7 @@ MonoBehaviour:
   m_SerializedViewNames:
   - UnityEditor.GameView
   m_SerializedViewValues:
-  - N:\Unity Projects\mobile\Block Escape\Library\PlayModeViewStates\01228ad15fcbd8f41a178931ce0c7a2c
+  - C:\Repos\Unity 3D\mobile\Block Escape\Library\PlayModeViewStates\2b1e51a0f9cb671499d493a69cefa92b
   m_PlayModeViewName: Device Simulator
   m_ShowGizmos: 0
   m_TargetDisplay: 0

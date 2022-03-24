@@ -341,6 +341,7 @@
 "Assets/Scripts/Ads/InterstitialAd.cs"
 "Assets/Scripts/Ads/RewardedAds.cs"
 "Assets/Scripts/Effects/BackDropScroll.cs"
+"Assets/Scripts/Effects/ContinueTimer.cs"
 "Assets/Scripts/Effects/Pulse.cs"
 "Assets/Scripts/Effects/Rotate.cs"
 "Assets/Scripts/Game/GameFunctions.cs"

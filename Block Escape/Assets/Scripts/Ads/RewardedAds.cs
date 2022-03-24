@@ -69,7 +69,7 @@ public class RewardedAds : MonoBehaviour, IUnityAdsLoadListener, IUnityAdsShowLi
             Time.timeScale = 1;
             AudioListener.pause = false;
             FindObjectOfType<RightCube>().Resume();
-            
+            FindObjectOfType<BannerAd>().ShowBannerAd();
             // Load another ad:
             Advertisement.Load(_adUnitId, this);
         }

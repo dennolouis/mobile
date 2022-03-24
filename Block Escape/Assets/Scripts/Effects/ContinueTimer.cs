@@ -11,7 +11,7 @@ public class ContinueTimer : MonoBehaviour
     void Start()
     {
         timer.text = time.ToString();
-        Invoke("Decrement", 1);
+        Invoker.InvokeDelayed(Decrement, 1);
     }
 
     public void Decrement()
@@ -20,9 +20,8 @@ public class ContinueTimer : MonoBehaviour
         {
             return;
         }
-        print(time);
         time--;
         timer.text = time.ToString();
-        Invoke("Decrement", 1f);
+        Invoker.InvokeDelayed(Decrement, 1);
     }
 }

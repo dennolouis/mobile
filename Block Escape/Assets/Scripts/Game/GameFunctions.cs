@@ -41,7 +41,6 @@ public class GameFunctions : MonoBehaviour
         banner.ShowBannerAd();
     }
 
-
     public void PlayerGotHit()
     {
         //for when left and right cube got hit at the same time
@@ -61,7 +60,7 @@ public class GameFunctions : MonoBehaviour
         }
         else
         {
-            MaybeShowAd();
+            Invoker.InvokeDelayed(MaybeShowAd, 0.5f);
             gameOverScreen.SetActive(true);
         }
     }
@@ -73,6 +72,7 @@ public class GameFunctions : MonoBehaviour
         {
             gameOver = true;
             AudioListener.pause = true;
+            banner.HideBannerAd();
             intersitialAd.ShowAd();
         }
             print("ad?");

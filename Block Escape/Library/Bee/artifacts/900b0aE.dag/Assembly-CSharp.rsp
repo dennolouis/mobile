@@ -351,6 +351,7 @@
 "Assets/Scripts/Game/RightCube.cs"
 "Assets/Scripts/Game/Scroll.cs"
 "Assets/Scripts/Game/Spawn.cs"
+"Assets/Scripts/Invoker.cs"
 "Assets/Scripts/Obsticle_Functions/chase.cs"
 "Assets/Scripts/Obsticle_Functions/FireProjectile.cs"
 "Assets/Scripts/Obsticle_Functions/Shift.cs"

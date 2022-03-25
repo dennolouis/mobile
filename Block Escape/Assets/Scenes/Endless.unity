@@ -3500,11 +3500,13 @@ MonoBehaviour:
   - {fileID: 7611830432565372586, guid: 020488e593d00754fa72f0006e38976e, type: 3}
   - {fileID: 100004, guid: 10a7ec2a2783770419a38059c45ea8b3, type: 3}
   - {fileID: 7471055548040897547, guid: b3afcd9692ed8b246bed8c04a0aab572, type: 3}
+  - {fileID: 4609928580563254305, guid: 576031040dd721a44bc04a5237f5886e, type: 3}
   speed: 1.5
   rate: 1.5
   scoreUI: {fileID: 1537979950}
   bestUI: {fileID: 2138772973}
   best: 0
+  justShowLast: 0
 --- !u!1 &1420942048
 GameObject:
   m_ObjectHideFlags: 0

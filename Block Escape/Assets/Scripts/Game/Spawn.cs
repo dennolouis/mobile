@@ -18,6 +18,9 @@ public class Spawn : MonoBehaviour
     public int best;
 
 
+    public bool justShowLast = false;
+
+
     private void Awake()
     {
         Load();
@@ -63,8 +66,10 @@ public class Spawn : MonoBehaviour
 
     void CreateObsticle()
     {
-        GameObject obsticle = Instantiate(obj[Random.Range(0, obj.Length)], transform.position, Quaternion.identity);
-        //GameObject obsticle = Instantiate(obj[ obj.Length - 1], transform.position, Quaternion.identity);
+        GameObject obsticle =  !justShowLast
+            ? Instantiate(obj[Random.Range(0, obj.Length)], transform.position, Quaternion.identity) 
+            : Instantiate(obj[ obj.Length - 1], transform.position, Quaternion.identity);
+        
         Destroy(obsticle, speed + 1);
     }
 

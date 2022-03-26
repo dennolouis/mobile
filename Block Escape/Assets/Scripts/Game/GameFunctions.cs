@@ -60,9 +60,15 @@ public class GameFunctions : MonoBehaviour
         }
         else
         {
-            Invoker.InvokeDelayed(MaybeShowAd, 0.5f);
-            gameOverScreen.SetActive(true);
+            ShowGameOverScreen();
         }
+    }
+
+    public void ShowGameOverScreen()
+    {
+        Invoker.InvokeDelayed(MaybeShowAd, 0.5f);
+        continueButton.SetActive(false);
+        gameOverScreen.SetActive(true);
     }
 
     void MaybeShowAd()

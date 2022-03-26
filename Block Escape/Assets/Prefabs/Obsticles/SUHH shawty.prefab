@@ -1,5 +1,18 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!65 &6717142347091189006
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2424780708495093052}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 4, z: 2}
+  m_Center: {x: -0.32, y: 2.9, z: 0}
 --- !u!1 &4609928580563254305
 GameObject:
   m_ObjectHideFlags: 0
@@ -11,7 +24,7 @@ GameObject:
   - component: {fileID: 1024053852426411422}
   m_Layer: 0
   m_Name: SUHH shawty
-  m_TagString: Untagged
+  m_TagString: Obsticle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25,13 +38,26 @@ Transform:
   m_GameObject: {fileID: 4609928580563254305}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 410.23, y: 892.8, z: -1.19}
-  m_LocalScale: {x: 10, y: 10, z: 10}
+  m_LocalScale: {x: 9, y: 9, z: 9}
   m_Children:
   - {fileID: 5209174005292405631}
   - {fileID: 3093231433177741190}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &4243205440992326883
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4828250793953413573}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.015, y: 0.02165064, z: 0.00330127}
+  m_Center: {x: 0, y: 1.1641532e-10, z: 0}
 --- !u!114 &458985811794160594
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -65,7 +91,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4c488ad5984675b40bf71057693c3a18, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.9899902
+      value: -1.686499
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4c488ad5984675b40bf71057693c3a18, type: 3}
       propertyPath: m_LocalPosition.z
@@ -107,12 +133,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: CrystalDiamond
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4c488ad5984675b40bf71057693c3a18, type: 3}
+      propertyPath: m_TagString
+      value: Obsticle
+      objectReference: {fileID: 0}
     - target: {fileID: 1541998606474349963, guid: 4c488ad5984675b40bf71057693c3a18, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 3f76c5b218aafb24c9e9f1d4ad071914, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4c488ad5984675b40bf71057693c3a18, type: 3}
+--- !u!1 &2424780708495093052 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 4c488ad5984675b40bf71057693c3a18, type: 3}
+  m_PrefabInstance: {fileID: 3271835326240051309}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &3093231433177741190 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 4c488ad5984675b40bf71057693c3a18, type: 3}
@@ -143,7 +178,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c20990e9771149a429970f477901a822, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.14349365
+      value: 1.16
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c20990e9771149a429970f477901a822, type: 3}
       propertyPath: m_LocalPosition.z
@@ -184,6 +219,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: c20990e9771149a429970f477901a822, type: 3}
       propertyPath: m_Name
       value: Idea (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c20990e9771149a429970f477901a822, type: 3}
+      propertyPath: m_TagString
+      value: Obsticle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c20990e9771149a429970f477901a822, type: 3}

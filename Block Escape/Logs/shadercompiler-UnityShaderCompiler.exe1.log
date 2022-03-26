@@ -1,3 +1,284 @@
 Base path: 'D:/UnityDownLoad/2021.1.19f1/Editor/Data', plugins path 'D:/UnityDownLoad/2021.1.19f1/Editor/Data/PlaybackEngines'
 Cmd: initializeCompiler
 
+Cmd: compileSnippet
+  insize=1683 file=Assets/SoftEffects/Shaders/SoftEffects/SoftShaderFont pass=Default cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=9 rsLen=0 pKW=UNITY_NO_DXT5nm UNITY_ENABLE_REFLECTION_BUFFERS UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 SHADER_API_DESKTOP UNITY_HARDWARE_TIER3 UNITY_COLORSPACE_GAMMA UNITY_LIGHTMAP_DLDR_ENCODING uKW= dKW=UNITY_UI_ALPHACLIP UNITY_ENABLE_NATIVE_SHADOW_LOOKUPS UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_PBS_USE_BRDF3 UNITY_NO_FULL_STANDARD_SHADER UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP UNITY_HARDWARE_TIER1 UNITY_HARDWARE_TIER2 UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_HALF_PRECISION_FRAGMENT_SHADER_REGISTERS UNITY_LIGHTMAP_RGBM_ENCODING UNITY_LIGHTMAP_FULL_HDR UNITY_VIRTUAL_TEXTURING UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_ASTC_NORMALMAP_ENCODING SHADER_API_GLES30 flags=0 lang=0 type=Vertex platform=d3d11 reqs=1 mask=6 start=49 ok=1 outsize=866
+
+Cmd: compileSnippet
+  insize=2147 file=Assets/SoftEffects/Shaders/SoftEffects/SoftShaderFontWithShadows pass=Shadow Pass cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=9 rsLen=0 pKW=UNITY_NO_DXT5nm UNITY_ENABLE_REFLECTION_BUFFERS UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 SHADER_API_DESKTOP UNITY_HARDWARE_TIER3 UNITY_COLORSPACE_GAMMA UNITY_LIGHTMAP_DLDR_ENCODING uKW= dKW=UNITY_UI_ALPHACLIP UNITY_ENABLE_NATIVE_SHADOW_LOOKUPS UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_PBS_USE_BRDF3 UNITY_NO_FULL_STANDARD_SHADER UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP UNITY_HARDWARE_TIER1 UNITY_HARDWARE_TIER2 UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_HALF_PRECISION_FRAGMENT_SHADER_REGISTERS UNITY_LIGHTMAP_RGBM_ENCODING UNITY_LIGHTMAP_FULL_HDR UNITY_VIRTUAL_TEXTURING UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_ASTC_NORMALMAP_ENCODING SHADER_API_GLES30 flags=0 lang=0 type=Vertex platform=d3d11 reqs=1 mask=6 start=53 ok=1 outsize=862
+
+Cmd: compileComputeKernel
+  insize=106333 file=N:/Unity Projects/mobile/Block Escape/Assets/SoftEffects/Shaders/SoftEffectsCompute.compute kernel=NormalizeF2 cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=9 km=<UNITY_VERSION=202119> pKW=UNITY_NO_DXT5nm UNITY_ENABLE_REFLECTION_BUFFERS UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 UNITY_COLORSPACE_GAMMA UNITY_LIGHTMAP_DLDR_ENCODING uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=16385 forceDXC=0 forceFXC=0  error: 1 plat 4 at SoftEffectsCompute.compute(674): implicit truncation of vector type
+  error: 1 plat 4 at SoftEffectsCompute.compute(722): implicit truncation of vector type
+  error: 1 plat 4 at SoftEffectsCompute.compute(769): implicit truncation of vector type
+  error: 1 plat 4 at SoftEffectsCompute.compute(817): implicit truncation of vector type
+ ok=1 outsize=1014
+
+Cmd: compileComputeKernel
+  insize=106333 file=N:/Unity Projects/mobile/Block Escape/Assets/SoftEffects/Shaders/SoftEffectsCompute.compute kernel=NormalizeF1 cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=9 km=<UNITY_VERSION=202119> pKW=UNITY_NO_DXT5nm UNITY_ENABLE_REFLECTION_BUFFERS UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 UNITY_COLORSPACE_GAMMA UNITY_LIGHTMAP_DLDR_ENCODING uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=16385 forceDXC=0 forceFXC=0  error: 1 plat 4 at SoftEffectsCompute.compute(674): implicit truncation of vector type
+  error: 1 plat 4 at SoftEffectsCompute.compute(722): implicit truncation of vector type
+  error: 1 plat 4 at SoftEffectsCompute.compute(769): implicit truncation of vector type
+  error: 1 plat 4 at SoftEffectsCompute.compute(817): implicit truncation of vector type
+ ok=1 outsize=852
+
+Cmd: compileComputeKernel
+  insize=106333 file=N:/Unity Projects/mobile/Block Escape/Assets/SoftEffects/Shaders/SoftEffectsCompute.compute kernel=CSDistMAAFloatInverse cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=9 km=<UNITY_VERSION=202119> pKW=UNITY_NO_DXT5nm UNITY_ENABLE_REFLECTION_BUFFERS UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 UNITY_COLORSPACE_GAMMA UNITY_LIGHTMAP_DLDR_ENCODING uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=16385 forceDXC=0 forceFXC=0  error: 1 plat 4 at SoftEffectsCompute.compute(674): implicit truncation of vector type
+  error: 1 plat 4 at SoftEffectsCompute.compute(722): implicit truncation of vector type
+  error: 1 plat 4 at SoftEffectsCompute.compute(769): implicit truncation of vector type
+  error: 1 plat 4 at SoftEffectsCompute.compute(817): implicit truncation of vector type
+ ok=1 outsize=1735
+
+Cmd: compileComputeKernel
+  insize=106333 file=N:/Unity Projects/mobile/Block Escape/Assets/SoftEffects/Shaders/SoftEffectsCompute.compute kernel=CSDistMM cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=9 km=<UNITY_VERSION=202119> pKW=UNITY_NO_DXT5nm UNITY_ENABLE_REFLECTION_BUFFERS UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 UNITY_COLORSPACE_GAMMA UNITY_LIGHTMAP_DLDR_ENCODING uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=16385 forceDXC=0 forceFXC=0  error: 1 plat 4 at SoftEffectsCompute.compute(674): implicit truncation of vector type
+  error: 1 plat 4 at SoftEffectsCompute.compute(722): implicit truncation of vector type
+  error: 1 plat 4 at SoftEffectsCompute.compute(769): implicit truncation of vector type
+  error: 1 plat 4 at SoftEffectsCompute.compute(817): implicit truncation of vector type
+  error: 1 plat 4 at SoftEffectsCompute.compute(2389): integer divides may be much slower, try using uints if possible.
+ ok=1 outsize=3345
+
+Cmd: compileComputeKernel
+  insize=106333 file=N:/Unity Projects/mobile/Block Escape/Assets/SoftEffects/Shaders/SoftEffectsCompute.compute kernel=CSDistMInverse cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=9 km=<UNITY_VERSION=202119> pKW=UNITY_NO_DXT5nm UNITY_ENABLE_REFLECTION_BUFFERS UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 UNITY_COLORSPACE_GAMMA UNITY_LIGHTMAP_DLDR_ENCODING uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=16385 forceDXC=0 forceFXC=0  error: 1 plat 4 at SoftEffectsCompute.compute(674): implicit truncation of vector type
+  error: 1 plat 4 at SoftEffectsCompute.compute(722): implicit truncation of vector type
+  error: 1 plat 4 at SoftEffectsCompute.compute(769): implicit truncation of vector type
+  error: 1 plat 4 at SoftEffectsCompute.compute(817): implicit truncation of vector type
+ ok=1 outsize=1515
+
+Cmd: compileComputeKernel
+  insize=106333 file=N:/Unity Projects/mobile/Block Escape/Assets/SoftEffects/Shaders/SoftEffectsCompute.compute kernel=CSShadowCombiner cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=9 km=<UNITY_VERSION=202119> pKW=UNITY_NO_DXT5nm UNITY_ENABLE_REFLECTION_BUFFERS UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 UNITY_COLORSPACE_GAMMA UNITY_LIGHTMAP_DLDR_ENCODING uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=16385 forceDXC=0 forceFXC=0  error: 1 plat 4 at SoftEffectsCompute.compute(674): implicit truncation of vector type
+  error: 1 plat 4 at SoftEffectsCompute.compute(722): implicit truncation of vector type
+  error: 1 plat 4 at SoftEffectsCompute.compute(769): implicit truncation of vector type
+  error: 1 plat 4 at SoftEffectsCompute.compute(817): implicit truncation of vector type
+ ok=1 outsize=1715
+
+Cmd: compileComputeKernel
+  insize=106333 file=N:/Unity Projects/mobile/Block Escape/Assets/SoftEffects/Shaders/SoftEffectsCompute.compute kernel=CSBoxBlurPass_BUF cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=9 km=<UNITY_VERSION=202119> pKW=UNITY_NO_DXT5nm UNITY_ENABLE_REFLECTION_BUFFERS UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 UNITY_COLORSPACE_GAMMA UNITY_LIGHTMAP_DLDR_ENCODING uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=16385 forceDXC=0 forceFXC=0  error: 1 plat 4 at SoftEffectsCompute.compute(674): implicit truncation of vector type
+  error: 1 plat 4 at SoftEffectsCompute.compute(722): implicit truncation of vector type
+  error: 1 plat 4 at SoftEffectsCompute.compute(769): implicit truncation of vector type
+  error: 1 plat 4 at SoftEffectsCompute.compute(817): implicit truncation of vector type
+ ok=1 outsize=1551
+
+Cmd: compileComputeKernel
+  insize=106333 file=N:/Unity Projects/mobile/Block Escape/Assets/SoftEffects/Shaders/SoftEffectsCompute.compute kernel=CSHorBlur8_BUF cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=9 km=<UNITY_VERSION=202119> pKW=UNITY_NO_DXT5nm UNITY_ENABLE_REFLECTION_BUFFERS UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 UNITY_COLORSPACE_GAMMA UNITY_LIGHTMAP_DLDR_ENCODING uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=16385 forceDXC=0 forceFXC=0  error: 1 plat 4 at SoftEffectsCompute.compute(674): implicit truncation of vector type
+  error: 1 plat 4 at SoftEffectsCompute.compute(722): implicit truncation of vector type
+  error: 1 plat 4 at SoftEffectsCompute.compute(769): implicit truncation of vector type
+  error: 1 plat 4 at SoftEffectsCompute.compute(817): implicit truncation of vector type
+ ok=1 outsize=1478
+
+Cmd: compileComputeKernel
+  insize=106333 file=N:/Unity Projects/mobile/Block Escape/Assets/SoftEffects/Shaders/SoftEffectsCompute.compute kernel=CSHorBlur16_BUF cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=9 km=<UNITY_VERSION=202119> pKW=UNITY_NO_DXT5nm UNITY_ENABLE_REFLECTION_BUFFERS UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 UNITY_COLORSPACE_GAMMA UNITY_LIGHTMAP_DLDR_ENCODING uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=16385 forceDXC=0 forceFXC=0  error: 1 plat 4 at SoftEffectsCompute.compute(674): implicit truncation of vector type
+  error: 1 plat 4 at SoftEffectsCompute.compute(722): implicit truncation of vector type
+  error: 1 plat 4 at SoftEffectsCompute.compute(769): implicit truncation of vector type
+  error: 1 plat 4 at SoftEffectsCompute.compute(817): implicit truncation of vector type
+ ok=1 outsize=1479
+
+Cmd: compileComputeKernel
+  insize=106333 file=N:/Unity Projects/mobile/Block Escape/Assets/SoftEffects/Shaders/SoftEffectsCompute.compute kernel=CSHorBlur30_BUF cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=9 km=<UNITY_VERSION=202119> pKW=UNITY_NO_DXT5nm UNITY_ENABLE_REFLECTION_BUFFERS UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 UNITY_COLORSPACE_GAMMA UNITY_LIGHTMAP_DLDR_ENCODING uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=16385 forceDXC=0 forceFXC=0  error: 1 plat 4 at SoftEffectsCompute.compute(674): implicit truncation of vector type
+  error: 1 plat 4 at SoftEffectsCompute.compute(722): implicit truncation of vector type
+  error: 1 plat 4 at SoftEffectsCompute.compute(769): implicit truncation of vector type
+  error: 1 plat 4 at SoftEffectsCompute.compute(817): implicit truncation of vector type
+ ok=1 outsize=1507
+
+Cmd: compileComputeKernel
+  insize=106333 file=N:/Unity Projects/mobile/Block Escape/Assets/SoftEffects/Shaders/SoftEffectsCompute.compute kernel=CSHorBlur250_BUF cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=9 km=<UNITY_VERSION=202119> pKW=UNITY_NO_DXT5nm UNITY_ENABLE_REFLECTION_BUFFERS UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 UNITY_COLORSPACE_GAMMA UNITY_LIGHTMAP_DLDR_ENCODING uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=16385 forceDXC=0 forceFXC=0  error: 1 plat 4 at SoftEffectsCompute.compute(674): implicit truncation of vector type
+  error: 1 plat 4 at SoftEffectsCompute.compute(722): implicit truncation of vector type
+  error: 1 plat 4 at SoftEffectsCompute.compute(769): implicit truncation of vector type
+  error: 1 plat 4 at SoftEffectsCompute.compute(817): implicit truncation of vector type
+ ok=1 outsize=1501
+
+Cmd: compileComputeKernel
+  insize=106333 file=N:/Unity Projects/mobile/Block Escape/Assets/SoftEffects/Shaders/SoftEffectsCompute.compute kernel=CSSepBevel_R8 cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=9 km=<UNITY_VERSION=202119> pKW=UNITY_NO_DXT5nm UNITY_ENABLE_REFLECTION_BUFFERS UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 UNITY_COLORSPACE_GAMMA UNITY_LIGHTMAP_DLDR_ENCODING uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=16385 forceDXC=0 forceFXC=0  error: 1 plat 4 at SoftEffectsCompute.compute(674): implicit truncation of vector type
+  error: 1 plat 4 at SoftEffectsCompute.compute(722): implicit truncation of vector type
+  error: 1 plat 4 at SoftEffectsCompute.compute(769): implicit truncation of vector type
+  error: 1 plat 4 at SoftEffectsCompute.compute(817): implicit truncation of vector type
+ ok=1 outsize=2725
+
+Cmd: compileComputeKernel
+  insize=106333 file=N:/Unity Projects/mobile/Block Escape/Assets/SoftEffects/Shaders/SoftEffectsCompute.compute kernel=CSCopyAR8 cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=9 km=<UNITY_VERSION=202119> pKW=UNITY_NO_DXT5nm UNITY_ENABLE_REFLECTION_BUFFERS UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 UNITY_COLORSPACE_GAMMA UNITY_LIGHTMAP_DLDR_ENCODING uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=16385 forceDXC=0 forceFXC=0  error: 1 plat 4 at SoftEffectsCompute.compute(674): implicit truncation of vector type
+  error: 1 plat 4 at SoftEffectsCompute.compute(722): implicit truncation of vector type
+  error: 1 plat 4 at SoftEffectsCompute.compute(769): implicit truncation of vector type
+  error: 1 plat 4 at SoftEffectsCompute.compute(817): implicit truncation of vector type
+ ok=1 outsize=438
+
+Cmd: compileComputeKernel
+  insize=106333 file=N:/Unity Projects/mobile/Block Escape/Assets/SoftEffects/Shaders/SoftEffectsCompute.compute kernel=CSBoxBlurPass_AR8 cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=9 km=<UNITY_VERSION=202119> pKW=UNITY_NO_DXT5nm UNITY_ENABLE_REFLECTION_BUFFERS UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 UNITY_COLORSPACE_GAMMA UNITY_LIGHTMAP_DLDR_ENCODING uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=16385 forceDXC=0 forceFXC=0  error: 1 plat 4 at SoftEffectsCompute.compute(674): implicit truncation of vector type
+  error: 1 plat 4 at SoftEffectsCompute.compute(722): implicit truncation of vector type
+  error: 1 plat 4 at SoftEffectsCompute.compute(769): implicit truncation of vector type
+  error: 1 plat 4 at SoftEffectsCompute.compute(817): implicit truncation of vector type
+ ok=1 outsize=1622
+
+Cmd: compileComputeKernel
+  insize=106333 file=N:/Unity Projects/mobile/Block Escape/Assets/SoftEffects/Shaders/SoftEffectsCompute.compute kernel=CSDistM_R8 cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=9 km=<UNITY_VERSION=202119> pKW=UNITY_NO_DXT5nm UNITY_ENABLE_REFLECTION_BUFFERS UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 UNITY_COLORSPACE_GAMMA UNITY_LIGHTMAP_DLDR_ENCODING uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=16385 forceDXC=0 forceFXC=0  error: 1 plat 4 at SoftEffectsCompute.compute(674): implicit truncation of vector type
+  error: 1 plat 4 at SoftEffectsCompute.compute(722): implicit truncation of vector type
+  error: 1 plat 4 at SoftEffectsCompute.compute(769): implicit truncation of vector type
+  error: 1 plat 4 at SoftEffectsCompute.compute(817): implicit truncation of vector type
+ ok=1 outsize=1630
+
+Cmd: compileComputeKernel
+  insize=106333 file=N:/Unity Projects/mobile/Block Escape/Assets/SoftEffects/Shaders/SoftEffectsCompute.compute kernel=CSDistMEAAFloat cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=9 km=<UNITY_VERSION=202119> pKW=UNITY_NO_DXT5nm UNITY_ENABLE_REFLECTION_BUFFERS UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 UNITY_COLORSPACE_GAMMA UNITY_LIGHTMAP_DLDR_ENCODING uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=16385 forceDXC=0 forceFXC=0  error: 1 plat 4 at SoftEffectsCompute.compute(674): implicit truncation of vector type
+  error: 1 plat 4 at SoftEffectsCompute.compute(722): implicit truncation of vector type
+  error: 1 plat 4 at SoftEffectsCompute.compute(769): implicit truncation of vector type
+  error: 1 plat 4 at SoftEffectsCompute.compute(817): implicit truncation of vector type
+  error: 1 plat 4 at SoftEffectsCompute.compute(3117): integer divides may be much slower, try using uints if possible.
+ ok=1 outsize=3678
+
+Cmd: compileComputeKernel
+  insize=106333 file=N:/Unity Projects/mobile/Block Escape/Assets/SoftEffects/Shaders/SoftEffectsCompute.compute kernel=CSDistBufferToInnerGlowSoft_R8 cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=9 km=<UNITY_VERSION=202119> pKW=UNITY_NO_DXT5nm UNITY_ENABLE_REFLECTION_BUFFERS UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 UNITY_COLORSPACE_GAMMA UNITY_LIGHTMAP_DLDR_ENCODING uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=16385 forceDXC=0 forceFXC=0  error: 1 plat 4 at SoftEffectsCompute.compute(674): implicit truncation of vector type
+  error: 1 plat 4 at SoftEffectsCompute.compute(722): implicit truncation of vector type
+  error: 1 plat 4 at SoftEffectsCompute.compute(769): implicit truncation of vector type
+  error: 1 plat 4 at SoftEffectsCompute.compute(817): implicit truncation of vector type
+ ok=1 outsize=1252
+
+Cmd: compileComputeKernel
+  insize=106333 file=N:/Unity Projects/mobile/Block Escape/Assets/SoftEffects/Shaders/SoftEffectsCompute.compute kernel=CSDistBufferToOuterGlowPrec_R8 cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=9 km=<UNITY_VERSION=202119> pKW=UNITY_NO_DXT5nm UNITY_ENABLE_REFLECTION_BUFFERS UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 UNITY_COLORSPACE_GAMMA UNITY_LIGHTMAP_DLDR_ENCODING uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=16385 forceDXC=0 forceFXC=0  error: 1 plat 4 at SoftEffectsCompute.compute(674): implicit truncation of vector type
+  error: 1 plat 4 at SoftEffectsCompute.compute(722): implicit truncation of vector type
+  error: 1 plat 4 at SoftEffectsCompute.compute(769): implicit truncation of vector type
+  error: 1 plat 4 at SoftEffectsCompute.compute(817): implicit truncation of vector type
+ ok=1 outsize=1393
+
+Cmd: compileComputeKernel
+  insize=106333 file=N:/Unity Projects/mobile/Block Escape/Assets/SoftEffects/Shaders/SoftEffectsCompute.compute kernel=CSHorBlur_R8 cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=9 km=<UNITY_VERSION=202119> pKW=UNITY_NO_DXT5nm UNITY_ENABLE_REFLECTION_BUFFERS UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 UNITY_COLORSPACE_GAMMA UNITY_LIGHTMAP_DLDR_ENCODING uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=16385 forceDXC=0 forceFXC=0  error: 1 plat 4 at SoftEffectsCompute.compute(674): implicit truncation of vector type
+  error: 1 plat 4 at SoftEffectsCompute.compute(722): implicit truncation of vector type
+  error: 1 plat 4 at SoftEffectsCompute.compute(769): implicit truncation of vector type
+  error: 1 plat 4 at SoftEffectsCompute.compute(817): implicit truncation of vector type
+ ok=1 outsize=1432
+
+Cmd: compileComputeKernel
+  insize=106333 file=N:/Unity Projects/mobile/Block Escape/Assets/SoftEffects/Shaders/SoftEffectsCompute.compute kernel=CSSepBevelCutOut cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=9 km=<UNITY_VERSION=202119> pKW=UNITY_NO_DXT5nm UNITY_ENABLE_REFLECTION_BUFFERS UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 UNITY_COLORSPACE_GAMMA UNITY_LIGHTMAP_DLDR_ENCODING uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=16385 forceDXC=0 forceFXC=0  error: 1 plat 4 at SoftEffectsCompute.compute(674): implicit truncation of vector type
+  error: 1 plat 4 at SoftEffectsCompute.compute(722): implicit truncation of vector type
+  error: 1 plat 4 at SoftEffectsCompute.compute(769): implicit truncation of vector type
+  error: 1 plat 4 at SoftEffectsCompute.compute(817): implicit truncation of vector type
+ ok=1 outsize=1117
+
+Cmd: compileComputeKernel
+  insize=106333 file=N:/Unity Projects/mobile/Block Escape/Assets/SoftEffects/Shaders/SoftEffectsCompute.compute kernel=CSSepBevelCutIn cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=9 km=<UNITY_VERSION=202119> pKW=UNITY_NO_DXT5nm UNITY_ENABLE_REFLECTION_BUFFERS UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 UNITY_COLORSPACE_GAMMA UNITY_LIGHTMAP_DLDR_ENCODING uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=16385 forceDXC=0 forceFXC=0  error: 1 plat 4 at SoftEffectsCompute.compute(674): implicit truncation of vector type
+  error: 1 plat 4 at SoftEffectsCompute.compute(722): implicit truncation of vector type
+  error: 1 plat 4 at SoftEffectsCompute.compute(769): implicit truncation of vector type
+  error: 1 plat 4 at SoftEffectsCompute.compute(817): implicit truncation of vector type
+ ok=1 outsize=764
+
+Cmd: compileComputeKernel
+  insize=106333 file=N:/Unity Projects/mobile/Block Escape/Assets/SoftEffects/Shaders/SoftEffectsCompute.compute kernel=CSVerBlur cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=9 km=<UNITY_VERSION=202119> pKW=UNITY_NO_DXT5nm UNITY_ENABLE_REFLECTION_BUFFERS UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 UNITY_COLORSPACE_GAMMA UNITY_LIGHTMAP_DLDR_ENCODING uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=16385 forceDXC=0 forceFXC=0  error: 1 plat 4 at SoftEffectsCompute.compute(674): implicit truncation of vector type
+  error: 1 plat 4 at SoftEffectsCompute.compute(722): implicit truncation of vector type
+  error: 1 plat 4 at SoftEffectsCompute.compute(769): implicit truncation of vector type
+  error: 1 plat 4 at SoftEffectsCompute.compute(817): implicit truncation of vector type
+ ok=1 outsize=1448
+
+Cmd: compileComputeKernel
+  insize=106333 file=N:/Unity Projects/mobile/Block Escape/Assets/SoftEffects/Shaders/SoftEffectsCompute.compute kernel=CSCopy cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=9 km=<UNITY_VERSION=202119> pKW=UNITY_NO_DXT5nm UNITY_ENABLE_REFLECTION_BUFFERS UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 UNITY_COLORSPACE_GAMMA UNITY_LIGHTMAP_DLDR_ENCODING uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=16385 forceDXC=0 forceFXC=0  error: 1 plat 4 at SoftEffectsCompute.compute(674): implicit truncation of vector type
+  error: 1 plat 4 at SoftEffectsCompute.compute(722): implicit truncation of vector type
+  error: 1 plat 4 at SoftEffectsCompute.compute(769): implicit truncation of vector type
+  error: 1 plat 4 at SoftEffectsCompute.compute(817): implicit truncation of vector type
+ ok=1 outsize=1697
+
+Cmd: compileComputeKernel
+  insize=106333 file=N:/Unity Projects/mobile/Block Escape/Assets/SoftEffects/Shaders/SoftEffectsCompute.compute kernel=NormalizeFB cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=9 km=<UNITY_VERSION=202119> pKW=UNITY_NO_DXT5nm UNITY_NO_RGBM UNITY_ENABLE_REFLECTION_BUFFERS UNITY_FRAMEBUFFER_FETCH_AVAILABLE UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 SHADER_API_MOBILE UNITY_COLORSPACE_GAMMA UNITY_LIGHTMAP_DLDR_ENCODING uKW=SHADER_STAGE_COMPUTE platform=metal flags=268439552 reqs=16385 forceDXC=0 forceFXC=0  error: 1 plat 14 at SoftEffectsCompute.compute(674): implicit truncation of vector type
+  error: 1 plat 14 at SoftEffectsCompute.compute(722): implicit truncation of vector type
+  error: 1 plat 14 at SoftEffectsCompute.compute(769): implicit truncation of vector type
+  error: 1 plat 14 at SoftEffectsCompute.compute(817): implicit truncation of vector type
+ ok=1 outsize=1931
+
+Cmd: compileComputeKernel
+  insize=106333 file=N:/Unity Projects/mobile/Block Escape/Assets/SoftEffects/Shaders/SoftEffectsCompute.compute kernel=NormalizeFCN cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=9 km=<UNITY_VERSION=202119> pKW=UNITY_NO_DXT5nm UNITY_NO_RGBM UNITY_ENABLE_REFLECTION_BUFFERS UNITY_FRAMEBUFFER_FETCH_AVAILABLE UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 SHADER_API_MOBILE UNITY_COLORSPACE_GAMMA UNITY_LIGHTMAP_DLDR_ENCODING uKW=SHADER_STAGE_COMPUTE platform=metal flags=268439552 reqs=16385 forceDXC=0 forceFXC=0  error: 1 plat 14 at SoftEffectsCompute.compute(674): implicit truncation of vector type
+  error: 1 plat 14 at SoftEffectsCompute.compute(722): implicit truncation of vector type
+  error: 1 plat 14 at SoftEffectsCompute.compute(769): implicit truncation of vector type
+  error: 1 plat 14 at SoftEffectsCompute.compute(817): implicit truncation of vector type
+ ok=1 outsize=1575
+
+Cmd: compileComputeKernel
+  insize=106333 file=N:/Unity Projects/mobile/Block Escape/Assets/SoftEffects/Shaders/SoftEffectsCompute.compute kernel=CSDistMAAFloatInverse cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=9 km=<UNITY_VERSION=202119> pKW=UNITY_NO_DXT5nm UNITY_NO_RGBM UNITY_ENABLE_REFLECTION_BUFFERS UNITY_FRAMEBUFFER_FETCH_AVAILABLE UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 SHADER_API_MOBILE UNITY_COLORSPACE_GAMMA UNITY_LIGHTMAP_DLDR_ENCODING uKW=SHADER_STAGE_COMPUTE platform=metal flags=268439552 reqs=16385 forceDXC=0 forceFXC=0  error: 1 plat 14 at SoftEffectsCompute.compute(674): implicit truncation of vector type
+  error: 1 plat 14 at SoftEffectsCompute.compute(722): implicit truncation of vector type
+  error: 1 plat 14 at SoftEffectsCompute.compute(769): implicit truncation of vector type
+  error: 1 plat 14 at SoftEffectsCompute.compute(817): implicit truncation of vector type
+ ok=1 outsize=3279
+
+Cmd: compileComputeKernel
+  insize=106333 file=N:/Unity Projects/mobile/Block Escape/Assets/SoftEffects/Shaders/SoftEffectsCompute.compute kernel=CSDistMM cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=9 km=<UNITY_VERSION=202119> pKW=UNITY_NO_DXT5nm UNITY_NO_RGBM UNITY_ENABLE_REFLECTION_BUFFERS UNITY_FRAMEBUFFER_FETCH_AVAILABLE UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 SHADER_API_MOBILE UNITY_COLORSPACE_GAMMA UNITY_LIGHTMAP_DLDR_ENCODING uKW=SHADER_STAGE_COMPUTE platform=metal flags=268439552 reqs=16385 forceDXC=0 forceFXC=0  error: 1 plat 14 at SoftEffectsCompute.compute(674): implicit truncation of vector type
+  error: 1 plat 14 at SoftEffectsCompute.compute(722): implicit truncation of vector type
+  error: 1 plat 14 at SoftEffectsCompute.compute(769): implicit truncation of vector type
+  error: 1 plat 14 at SoftEffectsCompute.compute(817): implicit truncation of vector type
+  error: 1 plat 14 at SoftEffectsCompute.compute(2387): use of potentially uninitialized variable (sepmdt)
+  error: 1 plat 14 at SoftEffectsCompute.compute(2389): integer divides may be much slower, try using uints if possible.
+ ok=1 outsize=6638
+
+Cmd: compileComputeKernel
+  insize=106333 file=N:/Unity Projects/mobile/Block Escape/Assets/SoftEffects/Shaders/SoftEffectsCompute.compute kernel=CSDistMInverse cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=9 km=<UNITY_VERSION=202119> pKW=UNITY_NO_DXT5nm UNITY_NO_RGBM UNITY_ENABLE_REFLECTION_BUFFERS UNITY_FRAMEBUFFER_FETCH_AVAILABLE UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 SHADER_API_MOBILE UNITY_COLORSPACE_GAMMA UNITY_LIGHTMAP_DLDR_ENCODING uKW=SHADER_STAGE_COMPUTE platform=metal flags=268439552 reqs=16385 forceDXC=0 forceFXC=0  error: 1 plat 14 at SoftEffectsCompute.compute(674): implicit truncation of vector type
+  error: 1 plat 14 at SoftEffectsCompute.compute(722): implicit truncation of vector type
+  error: 1 plat 14 at SoftEffectsCompute.compute(769): implicit truncation of vector type
+  error: 1 plat 14 at SoftEffectsCompute.compute(817): implicit truncation of vector type
+ ok=1 outsize=2627
+
+Cmd: compileComputeKernel
+  insize=106333 file=N:/Unity Projects/mobile/Block Escape/Assets/SoftEffects/Shaders/SoftEffectsCompute.compute kernel=CSCombiner cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=9 km=<UNITY_VERSION=202119> pKW=UNITY_NO_DXT5nm UNITY_NO_RGBM UNITY_ENABLE_REFLECTION_BUFFERS UNITY_FRAMEBUFFER_FETCH_AVAILABLE UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 SHADER_API_MOBILE UNITY_COLORSPACE_GAMMA UNITY_LIGHTMAP_DLDR_ENCODING uKW=SHADER_STAGE_COMPUTE platform=metal flags=268439552 reqs=16385 forceDXC=0 forceFXC=0  error: 2 plat 14 at (0): HLSLcc: Metal shading language does not support buffer size query from shader. Pass the size to shader as const instead.
+
+  error: 1 plat 14 at SoftEffectsCompute.compute(674): implicit truncation of vector type
+  error: 1 plat 14 at SoftEffectsCompute.compute(722): implicit truncation of vector type
+  error: 1 plat 14 at SoftEffectsCompute.compute(769): implicit truncation of vector type
+  error: 1 plat 14 at SoftEffectsCompute.compute(817): implicit truncation of vector type
+  error: 1 plat 14 at SoftEffectsCompute.compute(891): use of potentially uninitialized variable (normalpha_cut)
+ ok=0 outsize=0
+
+Cmd: compileComputeKernel
+  insize=106333 file=N:/Unity Projects/mobile/Block Escape/Assets/SoftEffects/Shaders/SoftEffectsCompute.compute kernel=CSInverse_R8FromAlpha cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=9 km=<UNITY_VERSION=202119> pKW=UNITY_NO_DXT5nm UNITY_NO_RGBM UNITY_ENABLE_REFLECTION_BUFFERS UNITY_FRAMEBUFFER_FETCH_AVAILABLE UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 SHADER_API_MOBILE UNITY_COLORSPACE_GAMMA UNITY_LIGHTMAP_DLDR_ENCODING uKW=SHADER_STAGE_COMPUTE platform=metal flags=268439552 reqs=16385 forceDXC=0 forceFXC=0  error: 1 plat 14 at SoftEffectsCompute.compute(674): implicit truncation of vector type
+  error: 1 plat 14 at SoftEffectsCompute.compute(722): implicit truncation of vector type
+  error: 1 plat 14 at SoftEffectsCompute.compute(769): implicit truncation of vector type
+  error: 1 plat 14 at SoftEffectsCompute.compute(817): implicit truncation of vector type
+ ok=1 outsize=777
+
+Cmd: compileComputeKernel
+  insize=106333 file=N:/Unity Projects/mobile/Block Escape/Assets/SoftEffects/Shaders/SoftEffectsCompute.compute kernel=CSDistBufferToOuterGlowSoft_R8 cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=9 km=<UNITY_VERSION=202119> pKW=UNITY_NO_DXT5nm UNITY_NO_RGBM UNITY_ENABLE_REFLECTION_BUFFERS UNITY_FRAMEBUFFER_FETCH_AVAILABLE UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 SHADER_API_MOBILE UNITY_COLORSPACE_GAMMA UNITY_LIGHTMAP_DLDR_ENCODING uKW=SHADER_STAGE_COMPUTE platform=metal flags=268439552 reqs=16385 forceDXC=0 forceFXC=0  error: 1 plat 14 at SoftEffectsCompute.compute(674): implicit truncation of vector type
+  error: 1 plat 14 at SoftEffectsCompute.compute(722): implicit truncation of vector type
+  error: 1 plat 14 at SoftEffectsCompute.compute(769): implicit truncation of vector type
+  error: 1 plat 14 at SoftEffectsCompute.compute(817): implicit truncation of vector type
+ ok=1 outsize=1921
+
+Cmd: compileComputeKernel
+  insize=106333 file=N:/Unity Projects/mobile/Block Escape/Assets/SoftEffects/Shaders/SoftEffectsCompute.compute kernel=CSHorBlur250_R8 cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=9 km=<UNITY_VERSION=202119> pKW=UNITY_NO_DXT5nm UNITY_NO_RGBM UNITY_ENABLE_REFLECTION_BUFFERS UNITY_FRAMEBUFFER_FETCH_AVAILABLE UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 SHADER_API_MOBILE UNITY_COLORSPACE_GAMMA UNITY_LIGHTMAP_DLDR_ENCODING uKW=SHADER_STAGE_COMPUTE platform=metal flags=268439552 reqs=16385 forceDXC=0 forceFXC=0  error: 1 plat 14 at SoftEffectsCompute.compute(674): implicit truncation of vector type
+  error: 1 plat 14 at SoftEffectsCompute.compute(722): implicit truncation of vector type
+  error: 1 plat 14 at SoftEffectsCompute.compute(769): implicit truncation of vector type
+  error: 1 plat 14 at SoftEffectsCompute.compute(817): implicit truncation of vector type
+ ok=1 outsize=2733
+
+Cmd: compileComputeKernel
+  insize=106333 file=N:/Unity Projects/mobile/Block Escape/Assets/SoftEffects/Shaders/SoftEffectsCompute.compute kernel=CSVerBlur_R8 cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=9 km=<UNITY_VERSION=202119> pKW=UNITY_NO_DXT5nm UNITY_NO_RGBM UNITY_ENABLE_REFLECTION_BUFFERS UNITY_FRAMEBUFFER_FETCH_AVAILABLE UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 SHADER_API_MOBILE UNITY_COLORSPACE_GAMMA UNITY_LIGHTMAP_DLDR_ENCODING uKW=SHADER_STAGE_COMPUTE platform=metal flags=268439552 reqs=16385 forceDXC=0 forceFXC=0  error: 1 plat 14 at SoftEffectsCompute.compute(674): implicit truncation of vector type
+  error: 1 plat 14 at SoftEffectsCompute.compute(722): implicit truncation of vector type
+  error: 1 plat 14 at SoftEffectsCompute.compute(769): implicit truncation of vector type
+  error: 1 plat 14 at SoftEffectsCompute.compute(817): implicit truncation of vector type
+ ok=1 outsize=2936
+
+Cmd: compileComputeKernel
+  insize=106333 file=N:/Unity Projects/mobile/Block Escape/Assets/SoftEffects/Shaders/SoftEffectsCompute.compute kernel=CSSepBevelCutIn cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=9 km=<UNITY_VERSION=202119> pKW=UNITY_NO_DXT5nm UNITY_NO_RGBM UNITY_ENABLE_REFLECTION_BUFFERS UNITY_FRAMEBUFFER_FETCH_AVAILABLE UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 SHADER_API_MOBILE UNITY_COLORSPACE_GAMMA UNITY_LIGHTMAP_DLDR_ENCODING uKW=SHADER_STAGE_COMPUTE platform=metal flags=268439552 reqs=16385 forceDXC=0 forceFXC=0  error: 1 plat 14 at SoftEffectsCompute.compute(674): implicit truncation of vector type
+  error: 1 plat 14 at SoftEffectsCompute.compute(722): implicit truncation of vector type
+  error: 1 plat 14 at SoftEffectsCompute.compute(769): implicit truncation of vector type
+  error: 1 plat 14 at SoftEffectsCompute.compute(817): implicit truncation of vector type
+ ok=1 outsize=1453
+
+Cmd: compileComputeKernel
+  insize=106333 file=N:/Unity Projects/mobile/Block Escape/Assets/SoftEffects/Shaders/SoftEffectsCompute.compute kernel=CSVerBlur cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=9 km=<UNITY_VERSION=202119> pKW=UNITY_NO_DXT5nm UNITY_NO_RGBM UNITY_ENABLE_REFLECTION_BUFFERS UNITY_FRAMEBUFFER_FETCH_AVAILABLE UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 SHADER_API_MOBILE UNITY_COLORSPACE_GAMMA UNITY_LIGHTMAP_DLDR_ENCODING uKW=SHADER_STAGE_COMPUTE platform=metal flags=268439552 reqs=16385 forceDXC=0 forceFXC=0  error: 1 plat 14 at SoftEffectsCompute.compute(674): implicit truncation of vector type
+  error: 1 plat 14 at SoftEffectsCompute.compute(722): implicit truncation of vector type
+  error: 1 plat 14 at SoftEffectsCompute.compute(769): implicit truncation of vector type
+  error: 1 plat 14 at SoftEffectsCompute.compute(817): implicit truncation of vector type
+ ok=1 outsize=3838
+
+Cmd: compileComputeKernel
+  insize=106333 file=N:/Unity Projects/mobile/Block Escape/Assets/SoftEffects/Shaders/SoftEffectsCompute.compute kernel=CSCopy cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=9 km=<UNITY_VERSION=202119> pKW=UNITY_NO_DXT5nm UNITY_NO_RGBM UNITY_ENABLE_REFLECTION_BUFFERS UNITY_FRAMEBUFFER_FETCH_AVAILABLE UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 SHADER_API_MOBILE UNITY_COLORSPACE_GAMMA UNITY_LIGHTMAP_DLDR_ENCODING uKW=SHADER_STAGE_COMPUTE platform=metal flags=268439552 reqs=16385 forceDXC=0 forceFXC=0  error: 1 plat 14 at SoftEffectsCompute.compute(674): implicit truncation of vector type
+  error: 1 plat 14 at SoftEffectsCompute.compute(722): implicit truncation of vector type
+  error: 1 plat 14 at SoftEffectsCompute.compute(769): implicit truncation of vector type
+  error: 1 plat 14 at SoftEffectsCompute.compute(817): implicit truncation of vector type
+ ok=1 outsize=3523
+
+Cmd: compileSnippet
+  insize=1647 file=Assets/DefaultResourcesExtra/Standard pass=FORWARD cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=9 rsLen=0 pKW=UNITY_NO_DXT5nm UNITY_ENABLE_REFLECTION_BUFFERS UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 SHADER_API_DESKTOP UNITY_HARDWARE_TIER3 UNITY_COLORSPACE_GAMMA UNITY_LIGHTMAP_DLDR_ENCODING UNITY_PASS_FORWARDBASE uKW=DIRECTIONAL _EMISSION dKW=FOG_LINEAR FOG_EXP FOG_EXP2 INSTANCING_ON _NORMALMAP _ALPHATEST_ON _ALPHABLEND_ON _ALPHAPREMULTIPLY_ON _METALLICGLOSSMAP _DETAIL_MULX2 _SMOOTHNESS_TEXTURE_ALBEDO_CHANNEL_A _SPECULARHIGHLIGHTS_OFF _GLOSSYREFLECTIONS_OFF _PARALLAXMAP LIGHTPROBE_SH SHADOWS_SHADOWMASK DYNAMICLIGHTMAP_ON LIGHTMAP_ON LIGHTMAP_SHADOW_MIXING DIRLIGHTMAP_COMBINED SHADOWS_SCREEN UNITY_ENABLE_NATIVE_SHADOW_LOOKUPS UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_PBS_USE_BRDF3 UNITY_NO_FULL_STANDARD_SHADER UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP UNITY_HARDWARE_TIER1 UNITY_HARDWARE_TIER2 UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_HALF_PRECISION_FRAGMENT_SHADER_REGISTERS UNITY_LIGHTMAP_RGBM_ENCODING UNITY_LIGHTMAP_FULL_HDR UNITY_VIRTUAL_TEXTURING UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_ASTC_NORMALMAP_ENCODING SHADER_API_GLES30 flags=0 lang=0 type=Fragment platform=d3d11 reqs=227 mask=6 start=68 ok=1 outsize=2602
+
+Cmd: compileSnippet
+  insize=5800 file=Assets/TextMesh Pro/Shaders/TextMeshPro/Mobile/Distance Field pass=<Unnamed Pass> cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=9 rsLen=0 pKW=UNITY_NO_DXT5nm UNITY_ENABLE_REFLECTION_BUFFERS UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 SHADER_API_DESKTOP UNITY_HARDWARE_TIER3 UNITY_COLORSPACE_GAMMA UNITY_LIGHTMAP_DLDR_ENCODING uKW=OUTLINE_ON UNDERLAY_ON dKW=UNDERLAY_INNER UNITY_UI_CLIP_RECT UNITY_UI_ALPHACLIP UNITY_ENABLE_NATIVE_SHADOW_LOOKUPS UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_PBS_USE_BRDF3 UNITY_NO_FULL_STANDARD_SHADER UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP UNITY_HARDWARE_TIER1 UNITY_HARDWARE_TIER2 UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_HALF_PRECISION_FRAGMENT_SHADER_REGISTERS UNITY_LIGHTMAP_RGBM_ENCODING UNITY_LIGHTMAP_FULL_HDR UNITY_VIRTUAL_TEXTURING UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_ASTC_NORMALMAP_ENCODING SHADER_API_GLES30 flags=0 lang=0 type=Vertex platform=d3d11 reqs=33 mask=6 start=83 ok=1 outsize=3734
+
+Cmd: compileSnippet
+  insize=1647 file=Assets/DefaultResourcesExtra/Standard pass=FORWARD cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=9 rsLen=0 pKW=UNITY_NO_DXT5nm UNITY_ENABLE_REFLECTION_BUFFERS UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 SHADER_API_DESKTOP UNITY_HARDWARE_TIER3 UNITY_COLORSPACE_GAMMA UNITY_LIGHTMAP_DLDR_ENCODING UNITY_PASS_FORWARDBASE uKW=DIRECTIONAL _ALPHABLEND_ON dKW=FOG_LINEAR FOG_EXP FOG_EXP2 INSTANCING_ON _NORMALMAP _ALPHATEST_ON _ALPHAPREMULTIPLY_ON _METALLICGLOSSMAP _PARALLAXMAP LIGHTPROBE_SH SHADOWS_SHADOWMASK DYNAMICLIGHTMAP_ON LIGHTMAP_ON LIGHTMAP_SHADOW_MIXING DIRLIGHTMAP_COMBINED SHADOWS_SCREEN VERTEXLIGHT_ON UNITY_ENABLE_NATIVE_SHADOW_LOOKUPS UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_PBS_USE_BRDF3 UNITY_NO_FULL_STANDARD_SHADER UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP UNITY_HARDWARE_TIER1 UNITY_HARDWARE_TIER2 UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_HALF_PRECISION_FRAGMENT_SHADER_REGISTERS UNITY_LIGHTMAP_RGBM_ENCODING UNITY_LIGHTMAP_FULL_HDR UNITY_VIRTUAL_TEXTURING UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_ASTC_NORMALMAP_ENCODING SHADER_API_GLES30 flags=0 lang=0 type=Vertex platform=d3d11 reqs=227 mask=6 start=68 ok=1 outsize=1670
+
+Cmd: compileSnippet
+  insize=1590 file=Assets/DefaultResourcesExtra/Standard pass=DEFERRED cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=9 rsLen=0 pKW=UNITY_NO_DXT5nm UNITY_ENABLE_REFLECTION_BUFFERS UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 SHADER_API_DESKTOP UNITY_HARDWARE_TIER3 UNITY_COLORSPACE_GAMMA UNITY_LIGHTMAP_DLDR_ENCODING UNITY_PASS_DEFERRED uKW=_ALPHABLEND_ON dKW=_EMISSION INSTANCING_ON _NORMALMAP _ALPHATEST_ON _ALPHAPREMULTIPLY_ON _METALLICGLOSSMAP _SMOOTHNESS_TEXTURE_ALBEDO_CHANNEL_A _SPECULARHIGHLIGHTS_OFF _DETAIL_MULX2 _PARALLAXMAP LIGHTPROBE_SH DYNAMICLIGHTMAP_ON SHADOWS_SHADOWMASK LIGHTMAP_ON DIRLIGHTMAP_COMBINED UNITY_HDR_ON UNITY_ENABLE_NATIVE_SHADOW_LOOKUPS UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_PBS_USE_BRDF3 UNITY_NO_FULL_STANDARD_SHADER UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP UNITY_HARDWARE_TIER1 UNITY_HARDWARE_TIER2 UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_HALF_PRECISION_FRAGMENT_SHADER_REGISTERS UNITY_LIGHTMAP_RGBM_ENCODING UNITY_LIGHTMAP_FULL_HDR UNITY_VIRTUAL_TEXTURING UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_ASTC_NORMALMAP_ENCODING SHADER_API_GLES30 flags=0 lang=0 type=Fragment platform=d3d11 reqs=227 mask=6 start=168 ok=1 outsize=1154
+
+Cmd: compileSnippet
+  insize=731 file=Assets/DefaultResourcesExtra/Sprites/Default pass=<Unnamed Pass> cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=9 rsLen=0 pKW=UNITY_NO_DXT5nm UNITY_ENABLE_REFLECTION_BUFFERS UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 SHADER_API_DESKTOP UNITY_HARDWARE_TIER3 UNITY_COLORSPACE_GAMMA UNITY_LIGHTMAP_DLDR_ENCODING uKW=ETC1_EXTERNAL_ALPHA dKW=INSTANCING_ON PIXELSNAP_ON UNITY_ENABLE_NATIVE_SHADOW_LOOKUPS UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_PBS_USE_BRDF3 UNITY_NO_FULL_STANDARD_SHADER UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP UNITY_HARDWARE_TIER1 UNITY_HARDWARE_TIER2 UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_HALF_PRECISION_FRAGMENT_SHADER_REGISTERS UNITY_LIGHTMAP_RGBM_ENCODING UNITY_LIGHTMAP_FULL_HDR UNITY_VIRTUAL_TEXTURING UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_ASTC_NORMALMAP_ENCODING SHADER_API_GLES30 flags=0 lang=0 type=Vertex platform=d3d11 reqs=1 mask=6 start=32 ok=1 outsize=890
+
+Cmd: shutdown

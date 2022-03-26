@@ -18,6 +18,7 @@ public class ContinueTimer : MonoBehaviour
     {
         if(time == 0)
         {
+            FindObjectOfType<GameFunctions>().ShowGameOverScreen();
             return;
         }
         time--;

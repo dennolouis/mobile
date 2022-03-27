@@ -2,27 +2,44 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class ContinueTimer : MonoBehaviour
 {
     public TextMeshProUGUI timer;
     int time = 5;
+
+    GameFunctions gameFunctions;
+    bool continued = false;
+
     // Start is called before the first frame update
     void Start()
     {
+        gameFunctions = FindObjectOfType<GameFunctions>();
         timer.text = time.ToString();
         Invoker.InvokeDelayed(Decrement, 1);
     }
 
     public void Decrement()
     {
-        if(time == 0)
+        if (continued)
         {
-            FindObjectOfType<GameFunctions>().ShowGameOverScreen();
+            return;
+        }
+
+        if(time <= 0)
+        {
+            gameFunctions.ShowGameOverScreen();
             return;
         }
         time--;
         timer.text = time.ToString();
         Invoker.InvokeDelayed(Decrement, 1);
+    }
+
+
+    public void Continue()
+    {
+        continued = true;
     }
 }

@@ -14,6 +14,7 @@ public class GameFunctions : MonoBehaviour
 
     public GameObject continueButton;
     public GameObject gameOverScreen;
+    public PauseButton pauseButton;
 
     public bool canContinue = true;
 
@@ -39,6 +40,7 @@ public class GameFunctions : MonoBehaviour
         banner = FindObjectOfType<BannerAd>();
         Advertisement.Banner.SetPosition(BannerPosition.BOTTOM_CENTER);
         banner.ShowBannerAd();
+        pauseButton = FindObjectOfType<PauseButton>();
     }
 
     public void PlayerGotHit()
@@ -69,6 +71,7 @@ public class GameFunctions : MonoBehaviour
         Invoker.InvokeDelayed(MaybeShowAd, 0.5f);
         continueButton.SetActive(false);
         gameOverScreen.SetActive(true);
+        pauseButton.HidePause();
     }
 
     void MaybeShowAd()
@@ -110,5 +113,16 @@ public class GameFunctions : MonoBehaviour
             //intersitialAd.ShowAd();
             SceneManager.LoadScene(1);
         }
+    }
+
+    public void PauseGame()
+    {
+        pauseButton.Pause();
+    }
+
+    
+    public void ResumeGame()
+    {
+        pauseButton.Resume();
     }
 }

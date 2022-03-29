@@ -337,7 +337,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d54531977ecb194c95e2d3aa7a5d72a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_ControlPath: <Keyboard>/space
+  m_ControlPath: <Keyboard>/f
 --- !u!114 &106457295
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -973,7 +973,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &728632559
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2076,13 +2076,13 @@ MonoBehaviour:
     m_ActionName: cube inputs/pause1[/Keyboard/e]
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1029528759}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 1029528765}
+        m_TargetAssemblyTypeName: GameFunctions, Assembly-CSharp
+        m_MethodName: ToggleMute
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -2262,6 +2262,7 @@ MonoBehaviour:
   continueButton: {fileID: 1453878516}
   gameOverScreen: {fileID: 1268275010}
   pauseButton: {fileID: 0}
+  isMuted: 0
   canContinue: 1
 --- !u!1 &1049763493
 GameObject:
@@ -5102,6 +5103,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pauseButtonUI: {fileID: 1741103627}
   resumeButtonUI: {fileID: 728632558}
+  mutebutton: {fileID: 106457292}
 --- !u!1001 &1776420497
 PrefabInstance:
   m_ObjectHideFlags: 0

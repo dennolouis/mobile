@@ -16,6 +16,8 @@ public class GameFunctions : MonoBehaviour
     public GameObject gameOverScreen;
     public PauseButton pauseButton;
 
+    public bool isMuted = false;
+
     public bool canContinue = true;
 
     InterstitialAd intersitialAd;
@@ -124,5 +126,22 @@ public class GameFunctions : MonoBehaviour
     public void ResumeGame()
     {
         pauseButton.Resume();
+    }
+
+    public void ToggleMute(InputAction.CallbackContext value)
+    {
+        if (value.started)
+        {
+            if (isMuted)
+            {
+                AudioListener.volume = 1;
+            }
+            else
+            {
+                AudioListener.volume = 0;
+            }
+
+            isMuted = !isMuted;
+        }
     }
 }

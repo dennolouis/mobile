@@ -70,7 +70,7 @@ public class Spawn : MonoBehaviour
             ? Instantiate(obj[Random.Range(0, obj.Length)], transform.position, Quaternion.identity) 
             : Instantiate(obj[ obj.Length - 1], transform.position, Quaternion.identity);
         
-        Destroy(obsticle, speed + 1);
+        Destroy(obsticle, speed + 1.5f);
     }
 
     void HandleSpeed()

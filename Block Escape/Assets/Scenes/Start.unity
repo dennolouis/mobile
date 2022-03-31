@@ -1022,6 +1022,22 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 78250fa9-7578-46e6-9c5c-e6f57bcb1033
     m_ActionName: cube inputs/play[/Keyboard/q]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: fa3e5181-b9a9-4b15-85af-852d27e525bd
+    m_ActionName: cube inputs/playAgain[/Keyboard/p]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: f490c21d-19ac-4b69-b755-7a1244ad2ff6
+    m_ActionName: cube inputs/pause[/Keyboard/e]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 5d4a832b-fa97-4f8b-b683-67de5a3dd0c6
+    m_ActionName: cube inputs/resume[/Keyboard/r]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 5665f03e-fd35-4489-8be7-88dd35ba27d7
+    m_ActionName: cube inputs/mute[/Keyboard/f]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: cube inputs
@@ -1758,6 +1774,10 @@ PrefabInstance:
     - target: {fileID: 2364528024986609156, guid: d4f6c785552e8924f83c72f2aa570af4, type: 3}
       propertyPath: speed
       value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 2364528024986609156, guid: d4f6c785552e8924f83c72f2aa570af4, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2364528024986609157, guid: d4f6c785552e8924f83c72f2aa570af4, type: 3}
       propertyPath: m_RootOrder
